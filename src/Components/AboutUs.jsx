@@ -3,8 +3,6 @@ import React, { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./AboutUs.css";
 
-import teamImage from "../assets/Homepage_About_us.webp";
-
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import AOS from "aos";
