@@ -1,0 +1,12 @@
+.member-detail-page {
+  display: flex;
+  padding: 2rem;
+}
+.member-detail-content {
+  padding: 2rem;
+}
+.member-image {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

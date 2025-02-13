@@ -1,0 +1,68 @@
+/* FAQ.css */
+
+/* Basic layout and structure */
+.faq-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.faq-body h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Styling for each question */
+.question {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+/* Button styles for the questions */
+.faq-button {
+  width: 100%;
+  padding: 15px;
+  text-align: left;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  color: black;
+  /* border-radius: 20px; */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.faq-button:hover {
+  background-color: var(--enam-blue);
+  color: aliceblue;
+  transform: scale(1.02);
+}
+.faq-button:active {
+  background-color: var(--enam-blue);
+  color: aliceblue;
+}
+.faq-button span {
+  float: right;
+  font-weight: bold;
+}
+
+/* Answer section styling */
+.answer {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  transition: max-height 0.8s ease-in-out, padding 0.3s ease;
+}
+
+/* Styling for the accordion icon */
+.faq-button span {
+  font-size: 1.2rem;
+}

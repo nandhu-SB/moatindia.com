@@ -1,0 +1,108 @@
+.team-section {
+  flex-direction: column;
+}
+
+.about-us-page-full-team h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-us-page-full-team p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(207, 207, 207, 0.368);
+  font-weight: 700;
+  width: 100%;
+  margin: 3% 0 3% 0;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 15px 0;
+}
+.cards h2 {
+  font-size: 200%;
+  color: var(--enam-blue);
+  padding: 0 15px 0 15px;
+}
+.card-text {
+  font-size: 1.2rem; /* Adjust the text size */
+  font-weight: bold; /* Make the text stand out */
+  margin-bottom: 10px; /* Add some space between text and the image */
+  color: #004080; /* Match the button text color for consistency */
+  text-align: center; /* Center the text */
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image-container-sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-container img {
+  width: 33.33vh;
+}
+.div-cards-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+}
+.cards-image {
+  height: auto;
+  /* width: 200%; */
+  margin: 15px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cards-image:hover {
+  transform: scale(1.02);
+}
+.member-info {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.close-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  background-color: #0056b3;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 890px) {
+  .image-container-sub {
+    flex-direction: column;
+  }
+}

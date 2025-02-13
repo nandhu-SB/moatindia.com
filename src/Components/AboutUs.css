@@ -1,0 +1,70 @@
+.about-us-page {
+  font-family: var(--primary-font);
+}
+.about-us-page h2 {
+  font-family: var(--heading-font);
+}
+.about-section,
+.moat-section,
+.mission-section,
+.vision-section,
+.achievements-section,
+.team-section {
+  margin-bottom: 20px;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+}
+.about-image,
+.moat-image,
+.mission-image,
+.vision-image,
+.achievement-image {
+  padding: 2%;
+}
+.about-content,
+.moat-content,
+.mission-content,
+.vision-content,
+.achievements-content,
+.team-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+.about-section img,
+.moat-section img,
+.mission-section img,
+.vision-section img,
+.achievements-section img,
+.team-section img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+}
+.about-section video,
+.moat-section video,
+.mission-section video,
+.vision-section video,
+.achievements-section video,
+.team-section video {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+    0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
+    0 32px 16px rgba(0, 0, 0, 0.09);
+}
+@media (max-width: 890px) {
+  .about-section,
+  .moat-section,
+  .mission-section,
+  .vision-section,
+  .achievements-section,
+  .team-section {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,33 @@
+.information {
+  background-color: rgb(222, 221, 221);
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  font-size: larger;
+}
+.info-details {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.map-container {
+  width: 100%;
+}
+.info-details section {
+  background-color: rgb(255, 255, 255);
+  margin: 3%;
+  padding: 3%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.map-container {
+  background-color: rgb(255, 255, 255);
+  padding: 2%;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .information {
+    flex-direction: column;
+  }
+}
