@@ -15,7 +15,7 @@ import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 import banner4 from "../assets/banner4.png";
 import banner3 from "../assets/banner3.png";
 
-import banner5 from "../assets/banner5.png";
+import banner5 from "../assets/BANNER5.png";
 
 import banner6 from "../assets/20250207_130121_0002.mp4";
 import banner7 from "../assets/banner7.mp4";
