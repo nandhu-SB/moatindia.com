@@ -16,27 +16,11 @@ import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 
 import banner4 from "../assets/banner4.png";
 import banner3 from "../assets/banner3.png";
-import banner1 from "../assets/banner1.jpg";
+
 import banner5 from "../assets/banner5.png";
-import banner2 from "../assets/banner2.jpg";
+
 import banner6 from "../assets/20250207_130121_0002.mp4";
 import banner7 from "../assets/banner7.mp4";
-
-import research1 from "../assets/team/Sujith-S.jpg";
-import research2 from "../assets/team/ravi-kumar.jpg";
-import research3 from "../assets/team/nandhu-sb.jpg";
-
-import marketing1 from "../assets/team/Twinkle-P-T.jpg";
-import marketing2 from "../assets/team/muhad.jpg";
-
-import operations1 from "../assets/team/sebastian-shiroj.jpg";
-import operations2 from "../assets/team/rahul.jpg";
-import operations3 from "../assets/team/manju-biju.jpg";
-
-import handshake from "../assets/handshake.webp";
-import handshake2 from "../assets/handshake2.jpg";
-import handshake3 from "../assets/handshake3.jpg";
-import handshake4 from "../assets/handshake4.jpg";
 
 import Credentials from "./Credentials";
 import { Link } from "react-router-dom";
@@ -145,7 +129,6 @@ const AboutUs = () => {
             <source src={banner7} type="video/mp4" />
             your browser doesnot support this video
           </video>
-          {/* <img src={banner5} /> */}
         </div>
       </div>
 
