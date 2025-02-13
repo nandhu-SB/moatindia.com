@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Body.css";
-import bannervideo from "../assets/Banner_1.mp4";
+import bannervideo from "../assets/banner_1.mp4";
 import bannervideo2 from "../assets/Finance Business Video Background_20250207_130003_0001.mp4";
 
 import Section from "./Section";
