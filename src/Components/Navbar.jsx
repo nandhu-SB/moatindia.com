@@ -176,6 +176,13 @@ const Navbar = () => {
                 <a href="./FeeCalculation" onClick={handleLinkClick}>
                   Fee Calculation Tool
                 </a>
+                <a
+                  href="https://moat-news-engine.streamlit.app/"
+                  target="_blank"
+                  onClick={handleLinkClick}
+                >
+                  News
+                </a>
               </div>
             )}
           </div>
