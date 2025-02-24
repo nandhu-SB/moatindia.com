@@ -95,7 +95,6 @@ const Navbar = () => {
                   { id: "mission", label: "Mission" },
                   { id: "vision", label: "Vision" },
                   { id: "achivements", label: "Achievements" },
-                  { id: "team", label: "Team" },
                   { id: "credentials", label: "Credentials" },
                 ].map(({ id, label }) => (
                   <Link
@@ -211,7 +210,7 @@ const Navbar = () => {
             )}
           </div>
 
-          <div className="nav-item">
+          <div className="nav-item" id="contact-button">
             <button
               onClick={() => toggleDropdown("Contact Us")}
               aria-expanded={activeMenu === "Contact Us"}
@@ -231,7 +230,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <Ticker />
     </>
   );
 };

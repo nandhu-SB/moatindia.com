@@ -242,7 +242,7 @@ const InvestmentPhilosohpy = () => {
         </div>
 
         <div className="sections" data-aos="fade-right">
-          <h2>Defining the Moats of a Company</h2>
+          <h2>Defining the Moat of a Company</h2>
           <div className="value-cards">
             <div className="value-card" data-aos="flip-left">
               <h3>Cost Advantage</h3>

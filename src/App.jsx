@@ -11,10 +11,12 @@ import Information from "./Components/Information";
 import Disclaimer from "./Components/Disclaimer";
 import FAQ from "./Components/FAQ";
 import FeeCalculationTool from "./Components/FeeCalculation";
+import ScrollToTop from "./Components/ScrollToTop";
 function App() {
   return (
     <>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Home" element={<Home />} />

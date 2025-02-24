@@ -35,7 +35,7 @@ const Section = ({
 
       <div className="section-body">
         <h2>{title}</h2>
-        <p data-aos="fade-right">{description}</p>
+        <p>{description}</p>
         <Link
           to={buttonURL}
           onClick={() =>

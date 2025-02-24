@@ -1,0 +1,51 @@
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-header-row {
+  background-color: var(--enam-blue);
+  color: white;
+  font-weight: bold;
+}
+
+.table-header {
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+}
+
+.table-value {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table-value {
+  color: #333;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+  .fee-table {
+    font-size: 14px;
+  }
+
+  .table-header,
+  .table-value {
+    padding: 8px;
+  }
+}

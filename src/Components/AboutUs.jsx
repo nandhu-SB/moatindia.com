@@ -203,35 +203,6 @@ const AboutUs = () => {
             last several years.
           </p>
         </div>
-        <div
-          className="cards"
-          data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-        >
-          <h2>Our Visionaries</h2>
-
-          <div className="image-container">
-            <div className="image-container-sub">
-              {leaders.map((leader) => (
-                <Card
-                  key={leader.id}
-                  image={leader.image}
-                  name={leader.name}
-                  title={leader.title}
-                  onClick={() =>
-                    navigate(`/member/${leader.id}`, { state: leader })
-                  }
-                />
-              ))}
-            </div>
-          </div>
-          <Link to={"/Fullteam"}>
-            <button className="readmore-button" type="button">
-              View All
-            </button>
-          </Link>
-        </div>
       </div>
       <Credentials />
 

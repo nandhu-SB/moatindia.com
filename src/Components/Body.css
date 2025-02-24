@@ -3,8 +3,8 @@
   --primary-color: #ffffff;
   --secondary-color: #0a3159;
 
-  --enam-blue: #16184d;
-  --second-blue: #005eff2a;
+  --enam-blue: #0f3d69;
+  --second-blue: #84cbf3;
   --primary-font: "Libre Baskerville", serif;
   --heading-font: "Oswald";
   --special-font1: "Satisfy";
@@ -12,73 +12,123 @@
   --quotes: "tangerine";
   --navbar-font: "Oswald";
 }
-
-.video-banner-div {
+.background-video-container {
+  display: flex;
   position: relative;
   width: 100%;
-  height: 50vh;
+  height: 650px;
   overflow: hidden;
+  margin-bottom: 15px;
 }
 
-.banner-video {
-  position: absolute;
-  top: 0;
-  left: 0;
+.background-video-container {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1;
+  animation: zoomIn 10s ease-in-out infinite alternate;
 }
-.video-banner-div::after {
-  content: "";
+@keyframes zoomIn {
+  from {
+    transform: scale(1.23);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}
+
+.overlay-content {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
+  top: 55%;
+  left: 30%;
+  transform: translate(-70%, -70%);
+  font-family: "Roboto";
+  color: #ffffff;
+  /* background-color: #022140cd; */
+  border-radius: 10px;
+
+  padding: 20px;
 }
-.banner-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+.overlay-content h1 {
+  font-size: 60px;
+  font-weight: 1000;
 }
-.banner-overlay h1 {
-  font-family: var(--heading-font);
-}
-.legacy-image {
-  height: auto;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+.overlay-content p {
+  font-size: 30px;
+  font-weight: 1000;
 }
 
 .readmore-button {
   padding: 12px 25px;
   width: 150px;
   font-weight: bold;
-  color: #ffffff;
-  background-color: var(--enam-blue);
-  margin: 20px;
+  color: var(--enam-blue);
+  background-color: #efcdb8;
+  margin: 20px 0;
   cursor: pointer;
   transition: all 0.3s ease;
-  border-radius: 10px;
-  border: 1px solid #004080;
-  font-family: var(--special-font1);
+
+  border: 1px solid #efcdb8;
+  font-family: var(--heading-font);
 }
 
 .readmore-button:hover {
   background-color: #ffffff;
-  color: #004080;
-  border: 1px solid #004080;
+  color: #e5a882;
+  border: 1px solid #ffffff;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+#pioneer-section-button {
+  margin: 10px 20px;
+}
+.legacy-section {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.legacy-image {
+  /* position: relative;
+  display: inline-block; */
+  padding: 2%;
+}
+.legacy-image img {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.legacy-image video {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.image-frame {
+  position: relative;
+  display: inline-block;
+}
 
+.image-frame::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border: 10px solid rgb(255, 255, 255);
+  pointer-events: none;
+  box-sizing: border-box;
+}
 .numbers {
-  background-color: var(--enam-blue);
+  background-color: #053e5f;
   color: var(--enam-blue);
   width: 100%;
   display: flex;
@@ -115,48 +165,126 @@
   transition: transform 0.8s ease-in-out;
 }
 
+.legacy-content {
+  padding: 3%;
+  flex: 1;
+}
+.legacy-content h2 {
+  /* font-size: 50px; */
+  color: var(--enam-blue);
+}
+
+.pioneer-section {
+  display: flex;
+  flex-direction: column;
+  padding: 3% 5%;
+  align-items: center;
+
+  background-color: #f1efef;
+}
+.pioneer-section h2 {
+  color: var(--enam-blue);
+  margin: 10px;
+  /* font-size: 40px; */
+}
+
+.member-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#member-section-body {
+  justify-content: center;
+}
+.member {
+  padding: 3%;
+}
+.member-pic {
+  display: flex;
+  position: relative; /* Allows absolutely positioned children */
+  overflow: hidden; /* Hide any overflow if needed */
+  align-items: center;
+  justify-content: center;
+}
+.member-pic img {
+  width: 100%;
+  display: block;
+}
+.member-about {
+  position: absolute;
+  bottom: 0; /* Change to top: 0; or use center positioning if needed */
+  left: 10px;
+  width: 100%;
+  color: #ffffff;
+  box-sizing: border-box;
+  /* padding: 4%; */
+
+  font-family: "Oswald";
+  font-size: 22px;
+}
+.member-about h3 {
+  font-weight: 700;
+}
+.quote {
+  font-family: var(--quotes);
+  font-size: 250%;
+  margin: 20px;
+}
 /* Responsive design for smaller screens */
-@media (max-width: 890px) {
-  .video-banner {
-    height: 100vh; /* Full viewport height for small screens */
+@media (max-width: 1024px) {
+  .overlay-content {
+    position: absolute;
+    /* top: 29%; */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto";
+    padding: 20px;
+  }
+  .member-section {
+    justify-content: space-evenly;
+  }
+  .overlay-content h1 {
+    font-size: 40px;
+    font-weight: 1000;
+  }
+  .overlay-content p {
+    font-size: 20px;
+    font-weight: 1000;
+  }
+  .legacy-section {
+    padding: 15% 5%;
   }
 
-  .banner-video {
+  /* .legacy-image img {
     width: 100%;
+  } */
+}
+
+@media (max-width: 768px) {
+  .legacy-section {
+    flex-direction: column;
+  }
+  .background-video-container {
+    height: 500px;
+  }
+  .member-section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .background-video-container {
+    height: 400px;
+  }
+  .background-image {
     height: 100%;
     object-fit: cover;
   }
-
-  .banner-overlay {
-    padding: 20px;
-    font-size: 0.9rem; /* Adjust text size for smaller screens */
-  }
-
-  .banner-overlay h1 {
-    font-size: 2rem; /* Adjust heading size */
-  }
-
-  .banner-overlay p {
-    font-size: 1rem; /* Adjust paragraph size */
-  }
-
-  .body_div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .legacy-image {
+  .readmore-button {
     width: 100%;
   }
-
-  .image-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .value-cards {
-    flex-direction: column;
-  }
-  .numbers {
-    flex-direction: column;
+  .legacy-section {
+    padding: 20% 5%;
   }
 }
