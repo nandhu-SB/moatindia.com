@@ -1,0 +1,28 @@
+.privacy-policy-content {
+  padding: 2%;
+  font-family: var(--primary-font);
+}
+.privacy-policy-content h4 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+}
+.privacy-section {
+  padding: 1% 2%;
+}
+
+.privacy-section ul {
+  padding: 0 2%;
+  margin-bottom: 2%;
+  font-weight: 400;
+}
+.privacy-section ol {
+  margin-top: 2%;
+  font-weight: 600;
+}
+.privacy-section p {
+  padding: 0 2%;
+  font-weight: 400;
+}
+.privacy-section li {
+  padding: 0 2%;
+}

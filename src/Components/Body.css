@@ -12,6 +12,10 @@
   --quotes: "tangerine";
   --navbar-font: "Oswald";
 }
+a {
+  text-decoration: none;
+  color: inherit; /* Keeps the text color the same as the parent */
+}
 .background-video-container {
   display: flex;
   position: relative;
@@ -230,6 +234,20 @@
   font-size: 250%;
   margin: 20px;
 }
+.media-container {
+  display: flex;
+}
+.media-section {
+  flex: 1;
+  padding: 2%;
+}
+.media-section img {
+  width: 100%;
+}
+.media-section h4 {
+  font-size: 150%;
+  font-family: var(--heading-font);
+}
 /* Responsive design for smaller screens */
 @media (max-width: 1024px) {
   .overlay-content {
@@ -253,6 +271,12 @@
   }
   .legacy-section {
     padding: 15% 5%;
+  }
+  .media-container {
+    flex-direction: column;
+  }
+  .numbers {
+    flex-direction: column;
   }
 
   /* .legacy-image img {

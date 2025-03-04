@@ -308,6 +308,67 @@ const InvestmentPhilosohpy = () => {
             </div>
           </div>
         </div>
+        <div className="sections" data-aos="fade-right">
+          <h2>Young Growth as Leaders of Tomorrow</h2>
+          <p>
+            A company in an emerging phase is seen as a highly promising
+            candidate with the right products with good business strategy and
+            hungry promoters for growth.
+            <br />
+            Over the period such a company can build multiple competitive
+            advantages towards following:
+          </p>
+          <div className="value-cards-next">
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>Unique selling points about its products.</h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>Control over costs in much permanent way.</h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>
+                Peter’s forces slowly and steadily show good things growing for
+                the company.
+              </h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>
+                Position of a company in markets against rivals is improving
+                with customer satisfaction, increase in revenue from the same
+                customers, and the addition of new customers.
+              </h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>
+                More Capexes and higher utilization cycles going on for multiple
+                years.
+              </h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>
+                Technology advances with JV and tie-ups with the best of
+                players.
+              </h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>
+                Company leveraging upon another partner’s or customers network
+                or brands.
+              </h3>
+            </div>
+            <div className="value-card-next" data-aos="flip-left">
+              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+              <h3>Reinvesting of capital at regular intervals.</h3>
+            </div>
+          </div>
+        </div>
       </div>
       <Footer />
       <Whatsapp />

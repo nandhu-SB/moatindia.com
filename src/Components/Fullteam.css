@@ -12,7 +12,7 @@
   margin-bottom: 10px;
 }
 
-.cards {
+.about-us-page-full-team .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,38 +25,38 @@
   border-radius: 10px;
   padding: 15px 0;
 }
-.cards h2 {
+.about-us-page-full-team .cards h2 {
   font-size: 200%;
   color: var(--enam-blue);
   padding: 0 15px 0 15px;
 }
-.card-text {
+.about-us-page-full-team .card-text {
   font-size: 1.2rem; /* Adjust the text size */
   font-weight: bold; /* Make the text stand out */
   margin-bottom: 10px; /* Add some space between text and the image */
   color: #004080; /* Match the button text color for consistency */
   text-align: center; /* Center the text */
 }
-.image-container {
+.about-us-page-full-team .image-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.image-container-sub {
+.about-us-page-full-team .image-container-sub {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.image-container img {
+.about-us-page-full-team .image-container img {
   width: 33.33vh;
 }
-.div-cards-image {
+.about-us-page-full-team .div-cards-image {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2%;
 }
-.cards-image {
+.about-us-page-full-team .cards-image {
   height: auto;
   /* width: 200%; */
   margin: 15px;
@@ -65,10 +65,10 @@
   transition: transform 0.3s ease;
 }
 
-.cards-image:hover {
+.about-us-page-full-team .cards-image:hover {
   transform: scale(1.02);
 }
-.member-info {
+.about-us-page-full-team .member-info {
   background-color: #f9f9f9;
   padding: 1.5rem;
   border-radius: 8px;
@@ -78,7 +78,7 @@
   animation: fadeIn 0.5s ease;
 }
 
-.close-btn {
+.about-us-page-full-team .close-btn {
   background-color: #007bff;
   color: white;
   border: none;
@@ -87,7 +87,7 @@
   cursor: pointer;
 }
 
-.close-btn:hover {
+.about-us-page-full-team .close-btn:hover {
   background-color: #0056b3;
 }
 @keyframes fadeIn {
@@ -102,7 +102,7 @@
 }
 
 @media (max-width: 890px) {
-  .image-container-sub {
+  .about-us-page-full-team .image-container-sub {
     flex-direction: column;
   }
 }

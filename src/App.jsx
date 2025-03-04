@@ -12,6 +12,20 @@ import Disclaimer from "./Components/Disclaimer";
 import FAQ from "./Components/FAQ";
 import FeeCalculationTool from "./Components/FeeCalculation";
 import ScrollToTop from "./Components/ScrollToTop";
+import RiskFactors from "./Components/RiskFactors";
+import PrivacyPolicy from "./Components/PrivacyPolicy";
+import Communique1 from "./Components/Communique1";
+import Communique2 from "./Components/Communique2";
+import Communique3 from "./Components/Communique3";
+import NewsLetter from "./Components/newsLetter";
+import SchemesNavigator from "./Components/SchemesNavigator";
+import EmergingMoat from "./Components/EmergingMoat";
+import SpecialOpportunities from "./Components/SpecialOpportunities";
+import ModerateCompounders from "./Components/ModerateCompounders";
+import UpperCrustWealthFund from "./Components/UppercrustWF";
+import UpperCrustGrowthFund from "./Components/UpperCrustGrowthFund";
+import UpperCrustProsperityFund from "./Components/UpperCrustProsperityFund";
+
 function App() {
   return (
     <>
@@ -27,6 +41,24 @@ function App() {
           <Route exact path="/Information" element={<Information />} />
           <Route exact path="/Disclaimer" element={<Disclaimer />} />
           <Route exact path="/FAQ" element={<FAQ />} />
+          <Route exact path="/RiskFactors" element={<RiskFactors />} />
+          <Route exact path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+          <Route exact path="/Communique1" element={<Communique1 />} />
+          <Route exact path="/Communique2" element={<Communique2 />} />
+          <Route exact path="/Communique3" element={<Communique3 />} />
+          <Route exact path="/NewsLetter" element={<NewsLetter />} />
+          <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
+          <Route
+            exact
+            path="/SpecialOpportunities"
+            element={<SpecialOpportunities />}
+          />
+          <Route
+            exact
+            path="/ModerateCompounders"
+            element={<ModerateCompounders />}
+          />
+          <Route exact path="/Schemes" element={<SchemesNavigator />} />
           <Route
             exact
             path="/FeeCalculation"
@@ -36,7 +68,22 @@ function App() {
             path="/InvestmentPhilosophy"
             element={<InvestmentPhilosohpy />}
           />
-
+          '
+          <Route
+            exact
+            path="/UpperCrustWealthFund"
+            element={<UpperCrustWealthFund />}
+          />
+          <Route
+            exact
+            path="/UpperCrustGrowthFund"
+            element={<UpperCrustGrowthFund />}
+          />
+          <Route
+            exact
+            path="/UpperCrustProsperityFund"
+            element={<UpperCrustProsperityFund />}
+          />
           <Route exact path="*" element={<PgFOF />} />
         </Routes>
       </BrowserRouter>

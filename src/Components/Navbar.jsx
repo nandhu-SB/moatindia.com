@@ -1,42 +1,59 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/logo-moat-india-2 copy.png";
 
-import { Link } from "react-router-dom";
-import Ticker from "./Ticker";
+const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
+  return (
+    <div
+      className="nav-item"
+      onMouseEnter={() => setActiveMenu(title)}
+      onMouseLeave={() => setActiveMenu(null)}
+      id={id}
+    >
+      <button aria-expanded={activeMenu === title}>{title}</button>
+      {activeMenu === title && (
+        <div className="dropdown">
+          {items.map(({ to, label, external }, index) =>
+            external ? (
+              <a
+                key={index}
+                href={to}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {label}
+              </a>
+            ) : (
+              <Link key={index} to={to}>
+                {label}
+              </Link>
+            )
+          )}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const dropdownRef = useRef(null);
 
-  const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
-    setActiveMenu(null);
-  };
-
-  const toggleDropdown = (menu) => {
-    setActiveMenu(activeMenu === menu ? null : menu);
-  };
-
-  const handleLinkClick = () => {
-    setMenuOpen(false);
-    setActiveMenu(null);
-  };
-
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setMenuOpen(false);
         setActiveMenu(null);
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
+
   const downloads = [
     {
       file: "Disclosure-document-Dt-20.09.2024.pdf",
@@ -67,170 +84,111 @@ const Navbar = () => {
   ];
 
   return (
-    <>
-      <nav className="navbar" ref={dropdownRef}>
-        <Link to="/" className="navbar-logo">
-          <img src={logo} alt="Moat Financial Services Logo" />
-        </Link>
-        <button
-          className="menu-button"
-          onClick={toggleMenu}
-          aria-label="Toggle menu"
-        >
-          ☰
-        </button>
-        <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-          <div className="nav-item">
-            <button
-              onClick={() => toggleDropdown("about")}
-              aria-expanded={activeMenu === "about"}
-            >
-              About Us
-            </button>
-            {activeMenu === "about" && (
-              <div className="dropdown">
-                {[
-                  { id: "who-we-are", label: "Who we are" },
-                  { id: "moat", label: "What is Moat" },
-                  { id: "mission", label: "Mission" },
-                  { id: "vision", label: "Vision" },
-                  { id: "achivements", label: "Achievements" },
-                  { id: "credentials", label: "Credentials" },
-                ].map(({ id, label }) => (
-                  <Link
-                    to={`/AboutUs#${id}`}
-                    key={id}
-                    onClick={handleLinkClick}
-                  >
-                    {label}
-                  </Link>
-                ))}
-              </div>
-            )}
-          </div>
+    <nav className="navbar" ref={dropdownRef}>
+      <Link to="/" className="navbar-logo">
+        <img src={logo} alt="Moat Financial Services Logo" />
+      </Link>
 
-          <div className="nav-item">
-            <button
-              onClick={() => toggleDropdown("strategy")}
-              aria-expanded={activeMenu === "strategy"}
-            >
-              Strategy
-            </button>
-            {activeMenu === "strategy" && (
-              <div className="dropdown">
-                <Link to="/InvestmentPhilosophy" onClick={handleLinkClick}>
-                  Investment Philosophy
-                </Link>
-              </div>
-            )}
-          </div>
+      <button
+        className="menu-button"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
 
-          <div className="nav-item">
-            <button
-              onClick={() => toggleDropdown("services")}
-              aria-expanded={activeMenu === "services"}
-            >
-              Services
-            </button>
-            {activeMenu === "services" && (
-              <div className="dropdown">
-                <a
-                  href="https://www.orbisonline.in/portal/Account/Login.aspx"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  Client Login
-                </a>
-                <a
-                  href="https://investment.1silverbullet.tech/login"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  Client Onboarding
-                </a>
-                <a href="/Disclaimer" onClick={handleLinkClick}>
-                  Dsiclaimer
-                </a>
-                <a
-                  href="https://scores.sebi.gov.in/"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  Lodge Complaints with SEBi
-                </a>
-                <a
-                  href="https://smartodr.in/login"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  Online Grievance Redressal
-                </a>
-                <a
-                  href="https://www.moatindia.com/wp-content/uploads/2024/06/Direct-Onboarding.pdf"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  Direct Onboarding
-                </a>
-                <a href="./FeeCalculation" onClick={handleLinkClick}>
-                  Fee Calculation Tool
-                </a>
-                <a
-                  href="https://moat-news-engine.streamlit.app/"
-                  target="_blank"
-                  onClick={handleLinkClick}
-                >
-                  News
-                </a>
-              </div>
-            )}
-          </div>
+      <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
+        <Dropdown
+          title="About Us"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            { to: "/AboutUs#who-we-are", label: "Who we are" },
+            { to: "/AboutUs#moat", label: "What is Moat" },
+            { to: "/AboutUs#mission", label: "Mission" },
+            { to: "/AboutUs#vision", label: "Vision" },
+            { to: "/AboutUs#achievements", label: "Achievements" },
+            { to: "/AboutUs#credentials", label: "Credentials" },
+          ]}
+        />
 
-          <div className="nav-item">
-            <button
-              onClick={() => toggleDropdown("downloads")}
-              aria-expanded={activeMenu === "downloads"}
-            >
-              Downloads
-            </button>
-            {activeMenu === "downloads" && (
-              <div className="dropdown">
-                {downloads.map(({ file, name }, index) => (
-                  <a
-                    key={index}
-                    href={`/files/${file}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={handleLinkClick}
-                  >
-                    {name}
-                  </a>
-                ))}
-              </div>
-            )}
-          </div>
+        <Dropdown
+          title="Strategy"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            { to: "/InvestmentPhilosophy", label: "Investment Philosophy" },
+            { to: "/Schemes", label: "Our Schemes" },
+          ]}
+        />
 
-          <div className="nav-item" id="contact-button">
-            <button
-              onClick={() => toggleDropdown("Contact Us")}
-              aria-expanded={activeMenu === "Contact Us"}
-            >
-              Contact Us
-            </button>
-            {activeMenu === "Contact Us" && (
-              <div className="dropdown">
-                <a href="/Information" onClick={handleLinkClick}>
-                  Our Information
-                </a>
-                <a href="/ContactUs" onClick={handleLinkClick}>
-                  Mail us
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
-      </nav>
-    </>
+        <Dropdown
+          title="Services"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            {
+              to: "https://www.orbisonline.in/portal/Account/Login.aspx",
+              label: "Client Login",
+              external: true,
+            },
+            {
+              to: "https://investment.1silverbullet.tech/login",
+              label: "Client Onboarding",
+              external: true,
+            },
+            { to: "/Disclaimer", label: "Disclaimer" },
+            {
+              to: "https://scores.sebi.gov.in/",
+              label: "Lodge Complaints with SEBI",
+              external: true,
+            },
+            {
+              to: "https://smartodr.in/login",
+              label: "Online Grievance Redressal",
+              external: true,
+            },
+            {
+              to: "https://www.moatindia.com/wp-content/uploads/2024/06/Direct-Onboarding.pdf",
+              label: "Direct Onboarding",
+              external: true,
+            },
+            {
+              to: "/files/Fee-calculation-Tool.xlsx", // Corrected path
+              label: "Fee Calculation Tool",
+              external: true,
+            },
+            {
+              to: "https://moat-news-engine.streamlit.app/",
+              label: "News",
+              external: true,
+            },
+          ]}
+        />
+
+        <Dropdown
+          title="Downloads"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={downloads.map(({ file, name }) => ({
+            to: `/files/${file}`,
+            label: name,
+            external: true,
+          }))}
+        />
+
+        <Dropdown
+          id="contact-button"
+          title="Contact Us"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            { to: "/Information", label: "Our Information" },
+            { to: "/ContactUs", label: "Mail us" },
+          ]}
+        />
+      </div>
+    </nav>
   );
 };
 

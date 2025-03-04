@@ -42,6 +42,13 @@ const Footer = () => {
         >
           Social Media
         </a>
+        <a href="/RiskFactors" target="_blank">
+          Risks
+        </a>
+        <a href="/PrivacyPolicy" target="_blank">
+          Privacy Policy
+        </a>
+        <a href="/NewsLetter">News Letter</a>
 
         <a href="/files/Disclosure-document-Dt-20.09.2024.pdf" target="_blank">
           Disclosures

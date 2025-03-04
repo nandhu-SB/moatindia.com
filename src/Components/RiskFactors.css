@@ -1,0 +1,15 @@
+.risk-content {
+  padding: 2%;
+  color: rgb(52, 52, 52);
+  font-family: var(--primary-font);
+}
+.risk-content h4 {
+  font-family: var(--heading-font);
+  font-size: 30px;
+}
+.risk-section {
+  padding: 2%;
+}
+.risk-section li {
+  margin: 2%;
+}

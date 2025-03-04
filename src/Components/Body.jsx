@@ -7,6 +7,11 @@ import oceanVideo from "../assets/ocean.mp4";
 import image1 from "../assets/Homepage_About_us.webp";
 import image2 from "../assets/Homepage_Strategy-1.webp";
 import image3 from "../assets/taj.png";
+
+import image4 from "../assets/blog-celebrating-our-achievemens.jpg";
+import image5 from "../assets/blog-rising-profits.jpg";
+import image6 from "../assets/blog-crafting-wealth.jpg";
+
 import biju from "../assets/team/biju-john.jpg";
 import fazal from "../assets/team/Fazal-Hameed.jpg";
 import Section from "./Section";
@@ -206,6 +211,74 @@ const Body = () => {
           " Disciplined investment approach always returns superior performance
           "
         </p>
+      </div>
+      <div className="media-container">
+        <div className="media-section">
+          <Link to="/Communique1">
+            <div className="media-section-image">
+              <img src={image4} alt="blog pic" />
+            </div>
+            <div className="media-section-content">
+              <p>June 14,2024</p>
+              <h4>
+                Celebrating Our Achievement: Top 10 Rankings for Our PMS
+                Strategies
+              </h4>
+              <p>
+                We are delighted to share some exciting news from Moat Financial
+                Services and UpperCrust Wealth! Our three Portfolio Management
+                Services (PMS) strategies have climbed into the top 10 rankings
+                for May 2024 🚀
+              </p>
+
+              <button className="readmore-button">READ MORE</button>
+            </div>
+          </Link>
+        </div>
+
+        <div className="media-section">
+          <Link to="./Communique2">
+            <div className="media-section-image">
+              <img src={image5} alt="blog pic" />
+            </div>
+            <div className="media-section-content">
+              <p>December 03, 2023</p>
+              <h4>
+                Rising Profits on a Falling Rupee: IT and Pharma Sectors Set to
+                Soar
+              </h4>
+              <p>
+                IT SECTOR India’s technology industry revenue is estimated to be
+                $245 Bn in FY 2023 Technology exports at $194 Bn (80%) and
+                domestic revenue is $51 Bn (20%) TOP COMPANIES UNDER IT The
+                total revenue of TCS is 2,25,458 Cr out of which 48% is...
+              </p>
+              <button className="readmore-button">READ MORE</button>
+            </div>
+          </Link>
+        </div>
+
+        <div className="media-section">
+          <Link to="/Communique3">
+            <div className="media-section-image">
+              <img src={image6} alt="blog pic" />
+            </div>
+            <div className="media-section-content">
+              <p>August 13, 2023</p>
+              <h4>
+                Crafting Wealth, Capturing the Remarkable: Your Portfolio, Our
+                Passion!
+              </h4>
+              <p>
+                Embrace the journey from the fear of missing out to the pinnacle
+                of Financial Freedom by taking decisive action today with Moat
+                Financial Services Private Ltd Our diligently made investment
+                fund presents a thriving opportunity to assure your...
+              </p>
+              <button className="readmore-button">READ MORE</button>
+            </div>
+          </Link>
+        </div>
       </div>
     </div>
   );
