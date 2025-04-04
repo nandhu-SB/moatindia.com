@@ -134,7 +134,7 @@ const AboutUs = () => {
         <div className="mission-content">
           <h2>Our Mission</h2>
           <p>
-            We want to create 500 Rupee Billionaires in 20 years or less using
+            We aim to create 500 Billionaires in 20 years or less using
             emerging moat businesses by compounding money consistently by more
             than 25% CAGR. To provide innovative, transparent, and sustainable
             financial solutions that help our clients create long-term wealth.
@@ -174,9 +174,7 @@ const AboutUs = () => {
             Management Services (PMS) strategies have climbed into the top 10
             rankings for May 2024.This remarkable achievement is a testament to
             the trust and support of our incredible clients, and we couldn’t be
-            more proud. Over the years, we have achieved numerous milestones,
-            from managing multi-million-dollar portfolios to earning the trust
-            of countless satisfied clients across the globe.
+            more proud.
           </p>
         </div>
         <div className="achievement-image">
@@ -188,22 +186,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="team-section" id="team" data-aos="flip-left">
-        <div className="team-content">
-          <h2>Meet our team</h2>
-          <p>
-            Moat is owned and controlled by its skilled and seasoned management
-            team, who have worked together closely over decades and continue to
-            do so even today with the same investment philosophy and a clear
-            alignment of interest! We follow the true spirit of equity investing
-            and so naturally, Moat is born from our passion for providing
-            professional and prudent investment management services. Our SEBI
-            registered Portfolio Management Service (PMS) has a rich history of
-            identifying several multi-bagger investment ideas early on over the
-            last several years.
-          </p>
-        </div>
-      </div>
+
       <Credentials />
 
       <Footer />

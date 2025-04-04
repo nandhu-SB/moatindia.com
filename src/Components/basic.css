@@ -9,7 +9,7 @@
 .moat-container h3,
 .moat-container h4 {
   font-family: var(--heading-font);
-  color: #e5a943;
+  color: #116b8c;
 }
 
 #mission {
@@ -88,7 +88,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e5a943;
+  background-color: #116b8c;
   color: rgb(1, 1, 1);
   font-family: var(--heading-font);
 }

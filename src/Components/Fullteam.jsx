@@ -11,11 +11,12 @@ import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 
 import research1 from "../assets/team/Sujith-S.jpg";
-import research2 from "../assets/team/ravi-kumar.jpg";
+import research2 from "../assets/team/ben.jpg";
 import research3 from "../assets/team/nandhu-sb.jpg";
 
 import marketing1 from "../assets/team/Twinkle-P-T.jpg";
 import marketing2 from "../assets/team/muhad.jpg";
+import marketing3 from "../assets/team/aiswarya.jpeg";
 
 import operations1 from "../assets/team/sebastian-shiroj.jpg";
 import operations2 from "../assets/team/rahul.jpg";
@@ -66,17 +67,17 @@ const Fullteam = () => {
     },
     {
       id: 2,
-      image: research2,
-      name: "Ravi Kumar",
-      title: "Research Analyst",
-      info: "Ravi leverages advanced data analysis techniques to extract valuable insights that drive strategic decision-making. With expertise in business analysis, forecasting, and financial modelling, he specializes in managing complex research projects, performing in-depth data analysis, and delivering actionable recommendations. He is a CFA aspirant and is an integral member of the research team at Moat.",
-    },
-    {
-      id: 3,
       image: research3,
       name: "Nandhu SB",
       title: "AI and Data Analyst",
-      info: "Nandhu applies advanced expertise in Data Science and Artificial Intelligence to enhance the performance of equity portfolios. With a strong proficiency in predictive analytics and financial modeling, Nandhu spearheads data-driven investment strategies at Moat Financial Services, delivering impactful solutions for portfolio optimization.",
+      info: "Nandhu applies advanced expertise in Data Science and Artificial Intelligence to enhance the performance of equity portfolios. With a strong proficiency in predictive analytics and financial modeling, Nandhu spearheads data-driven investment strategies at Moat Financial Services, delivering impactful solutions for portfolio optimization.His experience in serving as a data analyst in Kerala Govt prestigious KKEM ,",
+    },
+    {
+      id: 2,
+      image: research2,
+      name: "Ben Benny",
+      title: "Equity Research Analyst",
+      info: "Ben is an equity research analyst with a solid foundation in financial analysis, having passed CFA Level 1. Currently preparing for CFA Level 2, he is committed to advancing his skills in investment research and valuation.",
     },
   ];
 
@@ -118,6 +119,13 @@ const Fullteam = () => {
       name: "Muhad C. M.",
       title: "Territory Head Middle East",
       info: "Mr. Muhad is a seasoned professional with over 10 years of comprehensive experience in the banking industry, most notably as a Senior Manager at Axis Bank. His expertise spans team leadership, customer relationship management, retail branch banking sales, service quality enhancement, cross-selling, and customer base expansion and retention. He serves as the Territory Head for the Middle East at Moat, leading overseas marketing and business development initiatives. In addition, he has completed the NISM XXI-A PMS Distributors Certification Examination.",
+    },
+    {
+      id: 3,
+      image: marketing3,
+      name: "Aiswarya Radhakrishnan",
+      title: "Palakkad Cluster Head",
+      info: "With over 17 years in banking and financial services associating with lead banking institutions as such Axis Banks,HDFC Banks, Aiswarya Radhakrishnan is a dynamic leader known for driving business growth, optimizing operations, and managing high-value portfolios. She has held key leadership roles, overseeing teams, expanding markets, and enhancing financial services. Her expertise in wealth management, risk assessment, and strategic planning has consistently delivered exceptional results, making her a trusted name in the industry.",
     },
   ];
 

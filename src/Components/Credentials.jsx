@@ -15,7 +15,7 @@ const Credentials = () => {
         "Room No: 3-I, 3rd Floor, National Pearl Star, Behind Changampuzha Park Metro Station, Edapally, Kochi, Kerala 682024",
     },
     { label: "Name of Principal Officer", value: "M Sudheesh" },
-    { label: "Name of Compliance Officer", value: "Fazal Muhammed" },
+    { label: "Name of Compliance Officer", value: "Fazal Hameed" },
   ];
 
   return (

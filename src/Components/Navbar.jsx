@@ -80,7 +80,7 @@ const Navbar = () => {
       file: "UCWF-Factsheet_Dec24.pdf",
       name: "UpperCrust Wealth Fund Factsheet",
     },
-    { file: "Yearly_Performance-Oct.pdf", name: "Performance Reports" },
+    { file: "Yearly_Performance-Feb.pdf", name: "Performance Reports" },
   ];
 
   return (
@@ -154,15 +154,15 @@ const Navbar = () => {
               external: true,
             },
             {
-              to: "/files/Fee-calculation-Tool.xlsx", // Corrected path
+              to: "https://www.tulsianpms.com/pms/fee-calculator", // Corrected path
               label: "Fee Calculation Tool",
               external: true,
             },
-            {
-              to: "https://moat-news-engine.streamlit.app/",
-              label: "News",
-              external: true,
-            },
+            // {
+            //   to: "https://moat-news-engine.streamlit.app/",
+            //   label: "News",
+            //   external: true,
+            // },
           ]}
         />
 
