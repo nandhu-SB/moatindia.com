@@ -16,9 +16,10 @@ const Information = () => {
             Room No: 3-I, 3rd Floor, National Pearl Star, <br />
             Behind Changampuzha Park Metro Station, <br />
             Edappally, Kochi - 682024, Kerala, India.
+            <GoogleMap />
           </section>
 
-          <section>
+          {/* <section>
             <h3>Distributor Office:</h3>
             UpperCrust Wealth Pvt. Ltd.
             <br /> 316-320 Pancham Icon, <br />
@@ -38,12 +39,23 @@ const Information = () => {
             <h3>Email:</h3>
             <p>pms@moatindia.com</p>
           </section>
-        </div>
 
-        <div className="map-container">
-          <h3>Head office</h3>
-          <GoogleMap />
+
+          <section>
+            <h3>Distributor Office:</h3>
+            Bellwether Associates Pvt Ltd.
+            <br />Second Floor,201 Address one by Baani<br />
+            ,Golf Course Road,
+            <br /> Gurugram,Haryana,122011 
+          </section>
+          <section>
+            <h3>Phone:</h3>
+            <p>+91 98955 90168</p>
+            <h3>Email:</h3>
+            <p>pms@moatindia.com</p>
+          </section> */}
         </div>
+        \
       </div>
       <Footer />
     </>
