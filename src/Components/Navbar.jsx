@@ -85,9 +85,9 @@ const Navbar = () => {
       file: "UCWF-Factsheet_Dec24.pdf",
       name: "UpperCrust Wealth Fund Factsheet",
     },
-    { file: "Yearly_Performance_Apr_22.pdf", name: "Performance Reports" },
+    { file: "Yearly Performance April 2025", name: "Performance Reports" },
     {
-      file: "Monthly Performance Apr 22 2025.pdf",
+      file: "Monthly Performance April 2025.pdf",
       name: "Monthly Performance",
     },
   ];

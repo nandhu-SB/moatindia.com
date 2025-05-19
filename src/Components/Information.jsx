@@ -55,7 +55,7 @@ const Information = () => {
             <p>pms@moatindia.com</p>
           </section> */}
         </div>
-        \
+        
       </div>
       <Footer />
     </>
