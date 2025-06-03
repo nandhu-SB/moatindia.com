@@ -59,13 +59,6 @@ const Fullteam = () => {
 
   const research = [
     {
-      id: 1,
-      image: research1,
-      name: "Sujith S",
-      title: "Research Analyst",
-      info: "Mr. Sujith S has more than nine years of extensive experience in finance and the capital market. His professional journey commenced as an Accounts Executive within the Government sector, subsequently transitioning into the realm of the capital market. Before his tenure at Moat, he held the position of Research Analyst at AAA Profit Analytics Pvt. Ltd.",
-    },
-    {
       id: 2,
       image: research3,
       name: "Nandhu SB",
