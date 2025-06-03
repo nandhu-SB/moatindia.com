@@ -4,14 +4,40 @@
   background-color: rgb(58, 58, 58);
 }
 
+.moat-container .pillar h1,
+.moat-container .pillar h2,
+.moat-container .pillar h3,
+.moat-container .pillar h4,
+.moat-container .squares li,
+.moat-container .squares li,
+.moat-container .squares li,
+.moat-container .squares li {
+  font-family: var(--heading-font);
+  color: #ffffff;
+  font-size: 120%;
+}
+.moat-container .pillar p,
+.moat-container .squares p {
+  color: white;
+}
+
 .moat-container h1,
 .moat-container h2,
 .moat-container h3,
 .moat-container h4 {
   font-family: var(--heading-font);
-  color: #e5a943;
+  font-size: 140%;
+  color: white;
 }
 
+.moat-container section h1,
+.moat-container section h2,
+.moat-container section h3,
+.moat-container section h4 {
+  font-family: var(--heading-font);
+  font-size: 140%;
+  color: #2c2c2c;
+}
 #mission {
   /* background-color: #84caf33b; */
   padding: 2%;
@@ -88,7 +114,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e5a943;
+  background-color: #327aa4;
   color: rgb(1, 1, 1);
   font-family: var(--heading-font);
 }
@@ -109,7 +135,7 @@
   border-radius: 20px;
   margin: 2%;
   padding: 2%;
-  background-color: #ededed;
+  background-color: #327aa4;
 }
 .moat-container button {
   transition: all 0.3s ease;

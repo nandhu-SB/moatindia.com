@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="locations">
         <div className="location">
           <h4>Head Office</h4>
-          <h5>Moat Financial Services</h5>
+          <h5>Moat Financial Services Pvt Ltd</h5>
           <p>
             Room No: 3-I, 3rd Floor, National Pearl Star, Behind Changampuzha
             Park Metro Station, Edappally, Kochi, Kerala 682024. Phone: +91
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="location">
           <h4>Distributor Office</h4>
-          <h5>Upper Crust</h5>
+          <h5>Upper Crust Wealth Pvt Ltd</h5>
           <p>
             316-320 Pancham Icon, Next to DMart, Vasna Road, Vadodara – 390007,
             Gujarat, India.
@@ -33,21 +33,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-links">
-        <a href="/FAQ" target="_blank">
-          FAQs
-        </a>
+        <a href="/FAQ">FAQs</a>
         <a
           href="https://www.linkedin.com/company/moat-financial-services-pvt-ltd"
           target="_blank"
         >
           Social Media
         </a>
-        <a href="/RiskFactors" target="_blank">
-          Risks
-        </a>
-        <a href="/PrivacyPolicy" target="_blank">
-          Privacy Policy
-        </a>
+        <a href="/RiskFactors">Risks</a>
+        <a href="/PrivacyPolicy">Privacy Policy</a>
         <a href="/NewsLetter">News Letter</a>
 
         <a href="/files/Disclosure-document-Dt-20.09.2024.pdf" target="_blank">
