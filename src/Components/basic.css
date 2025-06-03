@@ -26,17 +26,7 @@
 .moat-container h3,
 .moat-container h4 {
   font-family: var(--heading-font);
-  font-size: 140%;
-  color: white;
-}
-
-.moat-container section h1,
-.moat-container section h2,
-.moat-container section h3,
-.moat-container section h4 {
-  font-family: var(--heading-font);
-  font-size: 140%;
-  color: #2c2c2c;
+  color: #116b8c;
 }
 #mission {
   /* background-color: #84caf33b; */
@@ -114,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #327aa4;
+  background-color: #116b8c;
   color: rgb(1, 1, 1);
   font-family: var(--heading-font);
 }

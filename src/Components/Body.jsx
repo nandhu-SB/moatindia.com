@@ -110,9 +110,9 @@ const Body = () => {
         <div className="legacy-content">
           <h2>A Legacy Based On Sustained Performance</h2>
           <p>
-            Moat Financial Services is India’s growing portfolio management
+            Moat Financial Services is a growing portfolio management
             service provider. We are built on values that drive our core
-            investment philosophy. Since 1997, we have nurtured long-standing
+            investment philosophy. Since 2013, we have nurtured long-standing
             relationships with domestic and global investors assisting them in
             managing their equity portfolios in the Indian market.
           </p>

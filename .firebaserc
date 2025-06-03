@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "moat-copy"
-  }
+    "default": "moatindia-5e01c",
+    "jacky": "moat-copy"
+  },
+  "targets": {},
+  "etags": {}
 }

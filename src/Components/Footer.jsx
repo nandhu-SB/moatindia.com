@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="sticky-footer">
       <div className="locations">
-        <div className="location">
+        {/* <div className="location">
           <h4>Head Office</h4>
           <h5>Moat Financial Services Pvt Ltd</h5>
           <p>
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div className="location">
           <h4>Distributor Office</h4>
-          <h5>Upper Crust Wealth Pvt Ltd</h5>
+          <h5>UpperCrust Wealth Pvt Ltd</h5>
           <p>
             316-320 Pancham Icon, Next to DMart, Vasna Road, Vadodara – 390007,
             Gujarat, India.
@@ -31,6 +31,12 @@ const Footer = () => {
             Email: karunakar.k@gacap.com Website: www.gacap.com{" "}
           </p>
         </div>
+        <div className="location">
+          <h4>Bellwether Associates Pvt Ltd</h4>
+          <p>
+            2nd Floor,201 Baani, Golf Course Road, Gurugram, Haryana, 122011
+          </p>
+        </div> */}
       </div>
       <div className="footer-links">
         <a href="/FAQ">FAQs</a>
@@ -44,9 +50,7 @@ const Footer = () => {
         <a href="/PrivacyPolicy">Privacy Policy</a>
         <a href="/NewsLetter">News Letter</a>
 
-        <a href="/files/Disclosure-document-Dt-20.09.2024.pdf" target="_blank">
-          Disclosures
-        </a>
+        <a href="/Disclaimer">Disclaimer</a>
         <a href="/Information">Contact Us</a>
       </div>
       <p>

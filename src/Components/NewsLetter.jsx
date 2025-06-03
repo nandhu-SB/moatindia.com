@@ -60,7 +60,7 @@ const Newsletter = () => {
                 type="application/pdf"
                 // width="100%"
               >
-                <p>PDF preview not available. Click to open.</p>
+                {/* <p>PDF preview not available. Click to open.</p> */}
               </object>
               <p className="newsletter-name">{name}</p>
             </div>

@@ -64,23 +64,35 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "COMPLAINT-DECEMBER-2024.pdf",
+      file: "COMPLAINT April 2025.pdf",
       name: "Investor Grievance Disclosure",
     },
-    { file: "Emerging-Moat-2.pdf", name: "Emerging Moat Factsheet" },
     {
-      file: "Moderate-Compounders-Factsheet.pdf",
+      file: "Emerging Moat Fact Sheet April 2025.pdf",
+      name: "Emerging Moat Factsheet",
+    },
+
+    {
+      file: "Moderate Compounders Factsheet April 2025.pdf",
       name: "Moderate Compounders Factsheet",
     },
     {
-      file: "Special-Opportunities-Factsheet.pdf",
+      file: "Special Opportunities Factsheet April 2025.pdf",
+
       name: "Special Opportunities Factsheet",
     },
     {
       file: "UCWF-Factsheet_Dec24.pdf",
       name: "UpperCrust Wealth Fund Factsheet",
     },
-    { file: "Yearly_Performance-Oct.pdf", name: "Performance Reports" },
+    {
+      file: "Yearly Performance April 2025.pdf",
+      name: "Yearly Performance Report",
+    },
+    {
+      file: "Monthly Performance April 2025.pdf",
+      name: "Monthly Performance",
+    },
   ];
 
   return (
@@ -137,7 +149,7 @@ const Navbar = () => {
               label: "Client Onboarding",
               external: true,
             },
-            { to: "/Disclaimer", label: "Disclaimer" },
+
             {
               to: "https://scores.sebi.gov.in/",
               label: "Lodge Complaints with SEBI",
@@ -154,15 +166,15 @@ const Navbar = () => {
               external: true,
             },
             {
-              to: "/files/Fee-calculation-Tool.xlsx", // Corrected path
+              to: "https://www.orbisonline.in/portal/Account/FeeIllustration.aspx", // Corrected path
               label: "Fee Calculation Tool",
               external: true,
             },
-            {
-              to: "https://moat-news-engine.streamlit.app/",
-              label: "News",
-              external: true,
-            },
+            // {
+            //   to: "https://moat-news-engine.streamlit.app/",
+            //   label: "News",
+            //   external: true,
+            // },
           ]}
         />
 
