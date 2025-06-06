@@ -64,20 +64,21 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "COMPLAINT April 2025.pdf",
+      file: "Complaints Data - May 2025.pdf",
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Emerging Moat Fact Sheet April 2025.pdf",
+      file: "Emerging Moat Factsheet - May 2025.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
-      file: "Moderate Compounders Factsheet April 2025.pdf",
+      file: "Moderate Compounders Factsheet - May 2025.pdf",
       name: "Moderate Compounders Factsheet",
     },
+
     {
-      file: "Special Opportunities Factsheet April 2025.pdf",
+      file: "Special Opportunities Factsheet - May 2025.pdf",
 
       name: "Special Opportunities Factsheet",
     },
@@ -86,11 +87,11 @@ const Navbar = () => {
       name: "UpperCrust Wealth Fund Factsheet",
     },
     {
-      file: "Yearly Performance April 2025.pdf",
+      file: "Yearly_Performance May 2025.pdf",
       name: "Yearly Performance Report",
     },
     {
-      file: "Monthly Performance April 2025.pdf",
+      file: "Monthly Performance May 2025.pdf",
       name: "Monthly Performance",
     },
   ];

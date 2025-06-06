@@ -10,9 +10,10 @@ import leaderImage1 from "../assets/team/biju-john.jpg";
 import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 
-import research1 from "../assets/team/Sujith-S.jpg";
+import research1 from "../assets/team/Jyothish.jpg";
 import research2 from "../assets/team/ben.jpg";
 import research3 from "../assets/team/nandhu-sb.jpg";
+import research4 from "../assets/team/Midhun Profile Pic 2.jpg";
 
 import marketing1 from "../assets/team/Twinkle-P-T.jpg";
 import marketing2 from "../assets/team/muhad.jpg";
@@ -57,6 +58,15 @@ const Fullteam = () => {
     },
   ];
 
+  const research_head = [
+    {
+      id: 1,
+      image: research4,
+      name: "Midhun Joe James",
+      title: "Head of strategy and investment",
+      info: "Midhun Joe James is a seasoned expert with over 23 years of corporate experience in leading companies in India and Europe including the Tata group, Bharti Airtel etc. Educationally, Midhun holds an MBA in Finance and Marketing and B.Tech in Electronics and Communication Engineering. Further enhancing his credentials, he is a NET-certified management professional and a NISM-certified Research Analyst, underscoring his profound expertise in financial markets and investment strategies. Midhun’s deep passion lies in finance, particularly Behavioral Finance, Capital Markets, and Value Investing. He is a voracious reader who meticulously follows Fundamental Research, Annual Reports, and Credit Rating Reports, continuously enriching his analytical acumen and strategic insights.As Head of Strategy and Investments, Midhun’s vision and analytical prowess position him uniquely to guide investment decisions, shape strategic direction, and deliver sustainable growth for our clients and stakeholders alike.",
+    },
+  ];
   const research = [
     {
       id: 2,
@@ -66,11 +76,18 @@ const Fullteam = () => {
       info: "Nandhu applies advanced expertise in Data Science and Artificial Intelligence to enhance the performance of equity portfolios. With a strong proficiency in predictive analytics and financial modeling, Nandhu spearheads data-driven investment strategies at Moat Financial Services, delivering impactful solutions for portfolio optimization.His experience in serving as a data analyst in Kerala Govt prestigious KKEM ,",
     },
     {
-      id: 2,
+      id: 3,
       image: research2,
       name: "Ben Benny",
       title: "Equity Research Analyst",
       info: "Ben is an equity research analyst with a solid foundation in financial analysis, having passed CFA Level 1. Currently preparing for CFA Level 2, he is committed to advancing his skills in investment research and valuation.",
+    },
+    {
+      id: 4,
+      image: research1,
+      name: "Jyothish Vijayan",
+      title: "Equity Research Analyst",
+      info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
     },
   ];
 
@@ -167,6 +184,19 @@ const Fullteam = () => {
             </div>
 
             <h2>Research</h2>
+            <div className="image-container-sub">
+              {research_head.map((leader) => (
+                <Card
+                  key={leader.id}
+                  image={leader.image}
+                  name={leader.name}
+                  title={leader.title}
+                  onClick={() =>
+                    navigate(`/member/${leader.id}`, { state: leader })
+                  }
+                />
+              ))}
+            </div>
             <div className="image-container-sub">
               {research.map((leader) => (
                 <Card
