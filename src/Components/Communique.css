@@ -12,29 +12,39 @@
 .progress-image img {
   width: 100%;
 }
-.communique-image-container {
-  width: 100%;
-  max-height: 300px;
-  overflow: hidden;
+.communique-image-container2 {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  padding: 2%;
+  background-color: rgba(101, 101, 101, 0.263);
+}
+.communique-image-container {
+  /* max-height: 300px; */
+  /* aspect-ratio: 1px 2px; */
+  /* width: 100%; */
+  /* overflow: hidden; */
+  background-color: rgba(101, 101, 101, 0.263);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* margin: 2%; */
 }
 .communique-image-container img {
-  width: 100%;
+  /* width: 100%; */
 }
 .communique-container h3 {
   font-size: 150%;
   font-family: var(--heading-font);
+  margin-top: 30px;
 }
 .communique-container h4 {
   font-size: 25px;
+  margin-bottom: 10px;
   font-family: var(--heading-font);
 }
 .communique-container p {
-  margin: 10px;
-  font-size: 17px;
+  margin: 6px;
+  font-size: 20px;
 }
 .communique-container ul {
   margin: 10px;

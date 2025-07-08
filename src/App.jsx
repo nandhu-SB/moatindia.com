@@ -25,6 +25,7 @@ import ModerateCompounders from "./Components/ModerateCompounders";
 import UpperCrustWealthFund from "./Components/UppercrustWF";
 import UpperCrustGrowthFund from "./Components/UpperCrustGrowthFund";
 import UpperCrustProsperityFund from "./Components/UpperCrustProsperityFund";
+import Communique4 from "./Components/Communique4";
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route exact path="/Communique1" element={<Communique1 />} />
           <Route exact path="/Communique2" element={<Communique2 />} />
           <Route exact path="/Communique3" element={<Communique3 />} />
+          <Route exact path="/Communique4" element={<Communique4 />} />
           <Route exact path="/NewsLetter" element={<NewsLetter />} />
           <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
           <Route

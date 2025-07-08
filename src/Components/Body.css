@@ -66,6 +66,7 @@ a {
 .overlay-content h1 {
   font-size: 60px;
   font-weight: 1000;
+  font-family: var(--heading-font);
 }
 .overlay-content p {
   font-size: 30px;
@@ -176,6 +177,7 @@ a {
 .legacy-content h2 {
   /* font-size: 50px; */
   color: var(--enam-blue);
+  font-family: var(--heading-font);
 }
 
 .pioneer-section {
@@ -189,6 +191,7 @@ a {
 .pioneer-section h2 {
   color: var(--enam-blue);
   margin: 10px;
+  font-family: var(--heading-font);
   /* font-size: 40px; */
 }
 
@@ -205,11 +208,17 @@ a {
 }
 .member-pic {
   display: flex;
-  position: relative; /* Allows absolutely positioned children */
-  overflow: hidden; /* Hide any overflow if needed */
+  position: relative;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
+  transition: transform 0.3s ease; /* Smooth scaling */
 }
+
+.member-pic:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
 .member-pic img {
   width: 100%;
   display: block;
@@ -217,14 +226,30 @@ a {
 .member-about {
   position: absolute;
   bottom: 0; /* Change to top: 0; or use center positioning if needed */
-  left: 10px;
+  right: 10;
   width: 100%;
+
   color: #ffffff;
+  /* background-color: #0a31599b; */
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #004e9212,
+    #000428
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #004e9212,
+    #000428
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   box-sizing: border-box;
-  /* padding: 4%; */
+  padding: 2%;
+  line-height: 10px;
+  margin-left: 10px;
 
   font-family: "Oswald";
-  font-size: 22px;
+  font-size: 15px;
 }
 .member-about h3 {
   font-weight: 700;
@@ -232,14 +257,26 @@ a {
 .quote {
   font-family: var(--quotes);
   font-size: 250%;
-  margin: 20px;
+  margin: 10px;
+  padding: 2%;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
 }
 .media-container {
   display: flex;
 }
 .media-section {
   flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 2%;
+  height: 100%;
 }
 .media-section img {
   width: 100%;
@@ -247,6 +284,13 @@ a {
 .media-section h4 {
   font-size: 150%;
   font-family: var(--heading-font);
+}
+.media-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 /* Responsive design for smaller screens */
 @media (max-width: 1024px) {

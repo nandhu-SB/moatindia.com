@@ -73,7 +73,7 @@ const Fullteam = () => {
       image: research3,
       name: "Nandhu SB",
       title: "AI and Data Analyst",
-      info: "Nandhu applies advanced expertise in Data Science and Artificial Intelligence to enhance the performance of equity portfolios. With a strong proficiency in predictive analytics and financial modeling, Nandhu spearheads data-driven investment strategies at Moat Financial Services, delivering impactful solutions for portfolio optimization.His experience in serving as a data analyst in Kerala Govt prestigious KKEM ,",
+      info: "Nandhu leverages advanced expertise in Data Science and Artificial Intelligence to enhance the performance of equity portfolios. With a strong foundation in predictive analytics and financial modeling, he leads data-driven investment strategies at Moat Financial Services, delivering impactful solutions for portfolio optimization and strategic asset allocation.Previously, he has contributed to several high-impact initiatives, including the Kerala Knowledge Economy Mission (KKEM), Vijnjana Pathanamthitta, and the Young Innovation Program, under the direct leadership of Dr. P.V. Unnikrishnan, Member Secretary of the Kerala Development and Innovation Strategic Council (K-DISC).Nandhu is currently pursuing a Bachelor of Science in Data Science and Applications at IIT Madras, further strengthening his academic foundation to support his work at the intersection of technology and finance.",
     },
     {
       id: 3,

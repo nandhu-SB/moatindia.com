@@ -2,6 +2,10 @@
   display: flex;
   padding: 2rem;
 }
+.member-detail-page h1,
+.member-detail-page h3 {
+  font-family: var(--heading-font);
+}
 .member-detail-content {
   padding: 2rem;
 }
@@ -9,6 +13,10 @@
   max-width: 300px;
   border-radius: 10px;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  transition: transform 0.3s ease;
+}
+.member-image:hover {
+  transform: scale(1.01);
 }
 @media (max-width: 768px) {
   .member-detail-page {
