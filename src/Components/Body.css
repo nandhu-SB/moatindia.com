@@ -54,14 +54,14 @@ a {
 .overlay-content {
   position: absolute;
   top: 55%;
-  left: 30%;
+  /* left: 30%; */
   transform: translate(-70%, -70%);
   font-family: "Roboto";
   color: #ffffff;
   /* background-color: #022140cd; */
   border-radius: 10px;
 
-  padding: 20px;
+  /* padding: 20px; */
 }
 .overlay-content h1 {
   font-size: 60px;

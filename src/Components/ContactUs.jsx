@@ -6,10 +6,13 @@ import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    reply_to: "",
+    number: "",
     message: "",
   });
+
+  const [isSending, setIsSending] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -17,53 +20,65 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // EmailJS configuration
-    const serviceID = "service_jmf0zze"; // Replace with your EmailJS service ID
-    const templateID = "template_w0jgnhe"; // Replace with your EmailJS template ID
-    const userID = "N_1U02x-s0mhNaME_"; // Replace with your EmailJS user ID (optional)
+    setIsSending(true);
 
     emailjs
-      .send(serviceID, templateID, formData, userID)
-      .then((response) => {
-        alert(`Thank you, ${formData.name}. We will get back to you soon!`);
-        console.log("Email sent successfully:", response);
-        setFormData({ name: "", email: "", message: "" });
+      .send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        formData,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
+      .then(() => {
+        alert(`Thank you, ${formData.from_name}. We will get back to you soon!`);
+        setFormData({ from_name: "", reply_to: "", number: "", message: "" });
       })
       .catch((error) => {
         console.error("Error sending email:", error);
         alert("Something went wrong. Please try again later.");
-      });
+      })
+      .finally(() => setIsSending(false));
   };
+
   return (
     <>
       <Navbar />
-
       <div className="contact-container">
         <div className="contact-card">
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you. Please fill out the form below.</p>
+          <p>Please fill out the form below.</p>
 
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="from_name">Name</label>
             <input
               type="text"
-              id="name"
-              name="name"
-              value={formData.name}
+              id="from_name"
+              name="from_name"
+              value={formData.from_name}
               onChange={handleChange}
               placeholder="Enter your name"
               required
             />
 
-            <label htmlFor="email">Email</label>
+            <label htmlFor="reply_to">Email</label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
+              id="reply_to"
+              name="reply_to"
+              value={formData.reply_to}
               onChange={handleChange}
               placeholder="Enter your email"
               required
+            />
+
+            <label htmlFor="number">Phone</label>
+            <input
+              type="text"
+              id="number"
+              name="number"
+              value={formData.number}
+              onChange={handleChange}
+              placeholder="Enter your phone number"
             />
 
             <label htmlFor="message">Message</label>
@@ -76,7 +91,9 @@ const ContactUs = () => {
               required
             ></textarea>
 
-            <button type="submit">Submit</button>
+            <button type="submit" disabled={isSending}>
+              {isSending ? "Sending..." : "Submit"}
+            </button>
           </form>
         </div>
       </div>

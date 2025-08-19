@@ -12,12 +12,15 @@ const Information = () => {
       <div className="information">
         <div className="info-details">
           <section>
-            <h3>Head Office:</h3>
+                       
             Room No: 3-I, 3rd Floor, National Pearl Star, <br />
             Behind Changampuzha Park Metro Station, <br />
-            Edappally, Kochi - 682024, Kerala, India.
+            Edappally, Kochi - 682024, Kerala, India.<br/>
+            pms@moatindia.com<br/>
+            +91 9895590168<br/>
             <GoogleMap />
           </section>
+          
 
           {/* <section>
             <h3>Distributor Office:</h3>

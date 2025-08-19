@@ -9,11 +9,14 @@ import { Link, useNavigate } from "react-router-dom";
 import leaderImage1 from "../assets/team/biju-john.jpg";
 import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
+import leaderImage4 from "../assets/team/vinayachandran.jpg";
 
 import research1 from "../assets/team/Jyothish.jpg";
 import research2 from "../assets/team/ben.jpg";
 import research3 from "../assets/team/nandhu-sb.jpg";
 import research4 from "../assets/team/Midhun Profile Pic 2.jpg";
+import research5 from "../assets/team/DHRUV PAWASHE.jpg";
+
 
 import marketing1 from "../assets/team/Twinkle-P-T.jpg";
 import marketing2 from "../assets/team/muhad.jpg";
@@ -24,9 +27,9 @@ import operations2 from "../assets/team/rahul.jpg";
 import operations3 from "../assets/team/manju-biju.jpg";
 
 const Card = ({ image, name, title, onClick }) => (
-  <div className="div-cards-image" data-aos="fade-right" onClick={onClick}>
+  <div className="div-cards-image"  onClick={onClick}>
     <img src={image} className="cards-image" alt={`Photo of ${name}`} />
-    <p className="card-text">{name}</p>
+    <h3 className="card-name">{name}</h3>
     <p className="card-text">{title}</p>
   </div>
 );
@@ -40,13 +43,20 @@ const Fullteam = () => {
       image: leaderImage1,
       name: "Biju John",
       title: "CEO & Founder",
-      info: "Biju is a management professional with over two decades of experience in the capital markets and FMCG sector. With his extensive experience, he brings to the table his expertise in understanding the investor’s side of the story. Innovations and promotions, maintaining investor relations, management of accounts and taking a deep peek into the marketing aspects are his specialisations.",
+      info: "Biju is a management \n professional with over two decades of experience in the capital markets and FMCG sector. With his extensive experience, he brings to the table his expertise in understanding the investor’s side of the story. Innovations and promotions, maintaining investor relations, management of accounts and taking a deep peek into the marketing aspects are his specialisations.",
+    },
+        {
+      id: 4,
+      image: leaderImage4,
+      name: "Dr. T. Vinay Kumar",
+      title: "Chairman",
+      info: "Dr. T. Vinay Kumar is a visionary leader with over 40 years of distinguished experience in public relations, advertising, branding, and marketing. A scholar and strategist, he holds an MBA in Marketing, an MPhil, and a PhD in Entrepreneurship, along with a Postgraduate Diploma in Marketing & Sales Management. His academic and professional journey reflects a deep commitment to excellence, innovation, and community impact.As the Founder and Senior Partner of Guide Advertising & Marketing Associates and Chairman of Kome Vertika, Dr. Kumar has been instrumental in shaping integrated marketing communications in India. He currently serves as the National President of the Public Relations Council of India (PRCI), the country’s largest network of communication professionals. He also holds leadership roles in the World Communicators Council (WCC), Young Communicators Club (YCC), and several other national and international organizations.He also serves on the boards of several private companies and a publicly listed company.Dr. Kumar is a published author, having written “The Prize – Dive into the possibilities & Impact on Public Relations,” and has presented research at prestigious conferences across India. His accolades include the PRCI Chanakya Award, Rotary International Vocational Excellence Award, and multiple recognitions for his contributions to entrepreneurship, education, and social service. A passionate advocate for youth development, cultural preservation, and entrepreneurship, Dr. Kumar continues to inspire through his leadership, scholarship, and service. He is based in Kochi, Kerala, and remains actively engaged in mentoring, community initiatives, and global communication forums.",
     },
     {
       id: 2,
       image: leaderImage2,
       name: "Fazal Hameed",
-      title: "Executive Director – Operations and Compliance",
+      title: "Executive Director ",
       info: "A seasoned financial expert, Fazal has over 30 years of experience navigating the intricacies of India’s capital markets. Since 1997, he has been a member of the Cochin Stock Exchange (now known as CSBL), demonstrating his deep understanding of equity market operations and adherence to regulations. Currently, Fazal holds the position of Executive Director, overseeing the Operations and Compliance functions at Moat. Before joining Moat, he honed his skills within the finance departments of prominent multinational companies based in the Middle East. His expertise is further bolstered by his successful completion of the NISM Series XXI-B Portfolio Managers Certification Examination.",
     },
     {
@@ -58,16 +68,15 @@ const Fullteam = () => {
     },
   ];
 
-  const research_head = [
-    {
+
+  const research = [
+        {
       id: 1,
       image: research4,
       name: "Midhun Joe James",
       title: "Head of strategy and investment",
       info: "Midhun Joe James is a seasoned expert with over 23 years of corporate experience in leading companies in India and Europe including the Tata group, Bharti Airtel etc. Educationally, Midhun holds an MBA in Finance and Marketing and B.Tech in Electronics and Communication Engineering. Further enhancing his credentials, he is a NET-certified management professional and a NISM-certified Research Analyst, underscoring his profound expertise in financial markets and investment strategies. Midhun’s deep passion lies in finance, particularly Behavioral Finance, Capital Markets, and Value Investing. He is a voracious reader who meticulously follows Fundamental Research, Annual Reports, and Credit Rating Reports, continuously enriching his analytical acumen and strategic insights.As Head of Strategy and Investments, Midhun’s vision and analytical prowess position him uniquely to guide investment decisions, shape strategic direction, and deliver sustainable growth for our clients and stakeholders alike.",
     },
-  ];
-  const research = [
     {
       id: 2,
       image: research3,
@@ -89,6 +98,13 @@ const Fullteam = () => {
       title: "Equity Research Analyst",
       info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
     },
+        {
+      id: 5,
+      image: research5,
+      name: "Dhruv Pawashe",
+      title: "Equity Research Analyst",
+      info: "Dhruv sees research as more than crunching numbers he sees it as storytelling with substance. He dives deep into businesses, connects macro shifts with micro details, and helps craft bespoke portfolios that stand the test of time.Backed by strong valuation skills and a sharp eye for patterns, Dhruv brings clarity and conviction to every investment idea he works on.",
+    },
   ];
 
   const operations = [
@@ -97,7 +113,7 @@ const Fullteam = () => {
       image: operations1,
       name: "Shiroj Sebastian",
       title: "Operations Manager",
-      info: "He has over 22+ years experience of working with leading National level Stockbrokers in various roles. Prior to joining MOAT, he had worked in a senior position for RELIGARE Broking from 2008-2019. He is a Commerce Graduate and is currently pursuing his Masters’s in Finance (MBA). Shiroj is currently handling Operations.",
+      info: "He has over 22+ years experience of working with leading National level Stockbrokers in various roles. Prior to joining MOAT, he had worked in a senior position for RELIGARE Broking from 2008-2019. Shiroj is currently handling Operations.",
     },
     {
       id: 2,
@@ -150,7 +166,7 @@ const Fullteam = () => {
     <div className="about-us-page-full-team">
       <Navbar />
 
-      <div className="team-section" id="team">
+
         <div className="cards">
           <div className="image-container">
             <h2>Leadership</h2>
@@ -184,19 +200,7 @@ const Fullteam = () => {
             </div>
 
             <h2>Research</h2>
-            <div className="image-container-sub">
-              {research_head.map((leader) => (
-                <Card
-                  key={leader.id}
-                  image={leader.image}
-                  name={leader.name}
-                  title={leader.title}
-                  onClick={() =>
-                    navigate(`/member/${leader.id}`, { state: leader })
-                  }
-                />
-              ))}
-            </div>
+    
             <div className="image-container-sub">
               {research.map((leader) => (
                 <Card
@@ -230,7 +234,7 @@ const Fullteam = () => {
             <button className="readmore-button">Go Back</button>
           </Link>
         </div>
-      </div>
+  
 
       <Footer />
     </div>

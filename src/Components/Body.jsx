@@ -335,28 +335,7 @@ const Body = () => {
             </div>
           </div>
         </Link>
-        <Link to="./Communique2">
-          {" "}
-          <div className="media-section">
-            <div className="media-section-image">
-              <img src={image5} alt="blog pic" />
-            </div>
-            <div className="media-section-content">
-              <p>December 03, 2023</p>
-              <h4>
-                Rising Profits on a Falling Rupee: IT and Pharma Sectors Set to
-                Soar
-              </h4>
-              <p>
-                IT SECTOR India’s technology industry revenue is estimated to be
-                $245 Bn in FY 2023 Technology exports at $194 Bn (80%) and
-                domestic revenue is $51 Bn (20%) TOP COMPANIES UNDER IT The
-                total revenue of TCS is 2,25,458 Cr out of which 48% is...
-              </p>
-              <button className="readmore-button">READ MORE</button>
-            </div>
-          </div>
-        </Link>
+
         <Link to="/Communique3">
           <div className="media-section">
             <div className="media-section-image">

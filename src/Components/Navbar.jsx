@@ -56,9 +56,10 @@ const Navbar = () => {
 
   const downloads = [
     {
-      file: "Disclosure-document-Dt-20.09.2024.pdf",
+      file: "Disclosure Document July 25, 2025-Moat OG.pdf",
       name: "Disclosure Document",
     },
+
     {
       file: "Investor-Charter-Disclosure.pdf",
       name: "Investor Charter Report",
@@ -68,17 +69,18 @@ const Navbar = () => {
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Emerging Moat Factsheet - May 2025.pdf",
+      file: "Fact Sheet - Emerging Moat July 25.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
-      file: "Moderate Compounders Factsheet - May 2025.pdf",
+    
+      file: "Fact Sheet - Moderate Compounders July 25.pdf",
       name: "Moderate Compounders Factsheet",
     },
 
     {
-      file: "Special Opportunities Factsheet - May 2025.pdf",
+      file: "Fact Sheet - Special Opportunities July 25.pdf",
 
       name: "Special Opportunities Factsheet",
     },
@@ -87,11 +89,11 @@ const Navbar = () => {
       name: "UpperCrust Wealth Fund Factsheet",
     },
     {
-      file: "Yearly_Performance May 2025.pdf",
+      file: "Yearly_Performance July 31.pdf",
       name: "Yearly Performance Report",
     },
     {
-      file: "Monthly Performance May 2025.pdf",
+      file: "Monthly_Performance July 31.pdf",
       name: "Monthly Performance",
     },
   ];
@@ -162,7 +164,7 @@ const Navbar = () => {
               external: true,
             },
             {
-              to: "https://www.moatindia.com/wp-content/uploads/2024/06/Direct-Onboarding.pdf",
+              to: "/ContactUs",
               label: "Direct Onboarding",
               external: true,
             },
