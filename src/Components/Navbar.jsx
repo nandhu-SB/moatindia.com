@@ -65,7 +65,7 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "Complaints Data - May 2025.pdf",
+      file: "COMPLAINT August 2025.pdf",
       name: "Investor Grievance Disclosure",
     },
     {
@@ -89,11 +89,11 @@ const Navbar = () => {
       name: "UpperCrust Wealth Fund Factsheet",
     },
     {
-      file: "Yearly_Performance July 31.pdf",
+      file: "Yearly_Performance August 2025.pdf",
       name: "Yearly Performance Report",
     },
     {
-      file: "Monthly_Performance July 31.pdf",
+      file: "Monthly Performance August 2025.pdf",
       name: "Monthly Performance",
     },
   ];

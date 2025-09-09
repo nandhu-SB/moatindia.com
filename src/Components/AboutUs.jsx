@@ -85,7 +85,7 @@ const AboutUs = () => {
     <div className="about-us-page">
       <Navbar />
 
-      <div className="about-section" id="who-we-are" data-aos="flip-left">
+      <div className="about-section" id="who-we-are" >
         <div className="about-image">
           <img src={banner4} alt="About Us" />
         </div>
@@ -106,7 +106,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-      <div className="moat-section" id="moat" data-aos="flip-left">
+      <div className="moat-section" id="moat" >
         <div className="moat-content">
           <h2>What is a Moat</h2>
           <p>
@@ -130,7 +130,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="mission-section" id="mission" data-aos="flip-left">
+      <div className="mission-section" id="mission" >
         <div className="mission-content">
           <h2>Our Mission</h2>
           <p>
@@ -147,7 +147,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="vision-section" id="vision" data-aos="flip-left">
+      <div className="vision-section" id="vision" >
         <div className="vision-image">
           <img src={banner3} />
         </div>
@@ -165,7 +165,7 @@ const AboutUs = () => {
       <div
         className="achievements-section"
         id="achivements"
-        data-aos="flip-left"
+        
       >
         <div className="achievements-content">
           <h2>Our PMS strategies are in the top 10</h2>

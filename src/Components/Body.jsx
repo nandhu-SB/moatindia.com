@@ -4,6 +4,9 @@ import bannervideo from "../assets/banner_1.mp4";
 import bannervideo3 from "../assets/pyramid.mp4";
 import bannervideo2 from "../assets/enam-india-desk-banner.webp";
 import oceanVideo from "../assets/ocean.mp4";
+import hand from "../assets/PENUP_20250909_121833.png";
+
+import mainBanner from "../assets/Investments Simplified.png";
 import image1 from "../assets/Homepage_About_us.webp";
 import image2 from "../assets/Homepage_Strategy-1.webp";
 import image3 from "../assets/taj.png";
@@ -134,17 +137,20 @@ const Body = () => {
 
   return (
     <div className="body_div">
+
       <div className="background-video-container">
         <video autoPlay muted loop>
           <source src={oceanVideo} type="video/mp4" />
         </video>
+        {/* <img src={hand} alt="hand" className="background-image" /> */}
         {/* <img src={bannervideo2} alt="banner" className="background-image" /> */}
         <div className="overlay-content">
-          <h1>Founded On Values</h1>
-          <h1>Driven By Trust</h1>
-          <p>Your Wealth Our Priority</p>
+          <h1>Investments Simplified</h1>
+         
+     
         </div>
       </div>
+
       <div className="legacy-section" id="legacy">
         <div className="legacy-image">
           <div className="image-frame">
@@ -194,14 +200,14 @@ const Body = () => {
         <div className="numbers-sub" ref={millionRef} data-id="million">
           {isVisible.million && (
             <Roller
-              value={2500}
-              suffix="+"
+              value={250}
+              suffix="Cr+"
               align="center"
               staggering
               rollDuration={3}
             />
           )}
-          <p>Million Total AUM</p>
+          <p>Total AUM</p>
         </div>
 
         <div className="numbers-sub" ref={customersRef} data-id="customers">
@@ -292,7 +298,7 @@ const Body = () => {
           "
         </p>
       </div>
-      <div className="media-container">
+      {/* <div className="media-container">
         <Link to="/Communique4">
           {" "}
           <div className="media-section">
@@ -357,7 +363,7 @@ const Body = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
