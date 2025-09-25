@@ -56,7 +56,7 @@ const Navbar = () => {
 
   const downloads = [
     {
-      file: "Disclosure Document July 25, 2025-Moat OG.pdf",
+      file: "DISCLOSURE_Sept_2025.pdf",
       name: "Disclosure Document",
     },
 
@@ -69,25 +69,25 @@ const Navbar = () => {
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Fact Sheet - Emerging Moat July 25.pdf",
+      file: "Emerging Moat Factsheet August 2025.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
     
-      file: "Fact Sheet - Moderate Compounders July 25.pdf",
+      file: "Moderate Compounders Factsheet August 2025.pdf",
       name: "Moderate Compounders Factsheet",
     },
 
     {
-      file: "Fact Sheet - Special Opportunities July 25.pdf",
+      file: "Special Opportunities Factsheet August 2025.pdf",
 
       name: "Special Opportunities Factsheet",
     },
-    {
-      file: "UCWF-Factsheet_Dec24.pdf",
-      name: "UpperCrust Wealth Fund Factsheet",
-    },
+    // {
+    //   file: "UCWF-Factsheet_Dec24.pdf",
+    //   name: "UpperCrust Wealth Fund Factsheet",
+    // },
     {
       file: "Yearly_Performance August 2025.pdf",
       name: "Yearly Performance Report",
@@ -113,7 +113,7 @@ const Navbar = () => {
       </button>
 
       <div className={`navbar-links ${menuOpen ? "active" : ""}`}>
-        <Dropdown
+        {/* <Dropdown
           title="About Us"
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
@@ -122,12 +122,14 @@ const Navbar = () => {
             { to: "/AboutUs#moat", label: "What is Moat" },
             { to: "/AboutUs#mission", label: "Mission" },
             { to: "/AboutUs#vision", label: "Vision" },
-            { to: "/AboutUs#achievements", label: "Achievements" },
+            // { to: "/AboutUs#achievements", label: "Achievements" },
             { to: "/AboutUs#credentials", label: "Credentials" },
           ]}
-        />
+        /> */}
+       <Link to="/AboutUs"> <button className="dropdown-button">About Us</button></Link>
+        
 
-        <Dropdown
+        {/* <Dropdown
           title="Strategy"
           activeMenu={activeMenu}
           setActiveMenu={setActiveMenu}
@@ -135,7 +137,9 @@ const Navbar = () => {
             { to: "/InvestmentPhilosophy", label: "Investment Philosophy" },
             { to: "/Schemes", label: "Our Schemes" },
           ]}
-        />
+        /> */}
+        <Link to="/Schemes"> <button className="dropdown-button">Strategy</button></Link>
+
 
         <Dropdown
           title="Services"
@@ -164,9 +168,9 @@ const Navbar = () => {
               external: true,
             },
             {
-              to: "/ContactUs",
+              to: "/DirectOnboarding",
               label: "Direct Onboarding",
-              external: true,
+              external: false,
             },
             {
               to: "https://www.orbisonline.in/portal/Account/FeeIllustration.aspx", // Corrected path
@@ -192,7 +196,7 @@ const Navbar = () => {
           }))}
         />
 
-        <Dropdown
+        {/* <Dropdown
           id="contact-button"
           title="Contact Us"
           activeMenu={activeMenu}
@@ -201,7 +205,15 @@ const Navbar = () => {
             { to: "/Information", label: "Our Information" },
             { to: "/ContactUs", label: "Mail us" },
           ]}
-        />
+        /> */}
+        
+          <Link to="/Information"><button
+          id="contact-button"
+          // onClick={() => (window.location.href = "/Information")}
+        >Contact Us</button></Link>
+          
+        
+        
       </div>
     </nav>
   );

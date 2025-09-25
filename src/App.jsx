@@ -26,6 +26,8 @@ import UpperCrustWealthFund from "./Components/UppercrustWF";
 import UpperCrustGrowthFund from "./Components/UpperCrustGrowthFund";
 import UpperCrustProsperityFund from "./Components/UpperCrustProsperityFund";
 import Communique4 from "./Components/Communique4";
+import DirectOnboarding from "./Components/DirectOnboarding";
+
 
 function App() {
   return (
@@ -50,6 +52,7 @@ function App() {
           <Route exact path="/Communique4" element={<Communique4 />} />
           <Route exact path="/NewsLetter" element={<NewsLetter />} />
           <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
+          <Route exact path="/DirectOnboarding" element={<DirectOnboarding/>}/>
           <Route
             exact
             path="/SpecialOpportunities"

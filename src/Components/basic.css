@@ -1,7 +1,7 @@
 .moat-container {
   padding: 3%;
   font-family: var(--primary-font);
-  background-color: rgb(58, 58, 58);
+  /* background-color: rgb(58, 58, 58); */
 }
 
 .moat-container .pillar h1,
@@ -12,13 +12,13 @@
 .moat-container .squares li,
 .moat-container .squares li,
 .moat-container .squares li {
-  font-family: var(--heading-font);
+  /* font-family: var(--heading-font); */
   color: #ffffff;
-  font-size: 120%;
+  /* font-size: 120%; */
 }
 .moat-container .pillar p,
 .moat-container .squares p {
-  color: white;
+  /* color: white; */
 }
 
 .moat-container h1,
@@ -26,7 +26,7 @@
 .moat-container h3,
 .moat-container h4 {
   font-family: var(--heading-font);
-  color: #116b8c;
+  /* color: #116b8c; */
 }
 /* #mission {
  
@@ -39,12 +39,12 @@
 } */
 .moat-container .table-container {
   overflow: auto;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 /* Merged table styles */
 .moat-container table {
-  border: 1px solid black;
-  border-radius: 10px;
+  /* border: 1px solid black; */
+  /* border-radius: 10px; */
   border-collapse: collapse; /* Fixes spacing between borders */
   width: 100%;
   /* border-radius: 20px; */
@@ -52,33 +52,33 @@
 
 .moat-container th,
 .moat-container td {
-  padding: 8px;
-  text-align: left;
-  border: 1px solid black;
+  /* padding: 8px; */
+  /* text-align: left; */
+  /* border: 1px solid black; */
 }
 
 .moat-container th {
-  color: rgb(241, 252, 254);
-  font-family: var(--heading-font);
-  background-color: #2c2c2c; /* Optional: header background */
+  /* color: rgb(241, 252, 254); */
+  /* font-family: var(--heading-font); */
+  /* background-color: #2c2c2c; */
 }
 
 /* Alternate row colors */
 .moat-container tr:nth-child(even) {
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 }
 .moat-container tr:nth-child(odd) {
-  background-color: white;
+  /* background-color: white; */
 }
 
 /* Hover effect for rows */
 .moat-container tr:hover {
-  background-color: #e0f7fa;
+  /* background-color: #e0f7fa; */
 }
 .moat-container section {
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  padding: 2%;
+  padding: 2%; */
   margin: 20px 0;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
@@ -93,19 +93,19 @@
   list-style: none;
 }
 .squares li {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 2%;
   margin: 2%;
-  border-radius: 10px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* border-radius: 10px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
   flex-basis: 200px;
   flex-grow: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #116b8c;
-  color: rgb(1, 1, 1);
+  /* background-color: #ffffff; */
+  /* color: rgb(1, 1, 1); */
   font-family: var(--heading-font);
 }
 .moat-container .pillars {
@@ -125,7 +125,7 @@
   border-radius: 20px;
   margin: 2%;
   padding: 2%;
-  background-color: #327aa4;
+  background-color: var(--enam-blue);
 }
 .moat-container button {
   transition: all 0.3s ease;

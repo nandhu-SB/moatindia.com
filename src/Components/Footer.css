@@ -1,30 +1,21 @@
 /* Footer Styles */
 .sticky-footer {
-  background-color: #09529b; /* Dark background for contrast */
-  color: rgb(255, 255, 255); /* Light text for readability */
+  background-color: #edf3f8;
+  
+  color: var(--enam-blue); 
   text-align: center;
-  margin-top: 2%;
+  /* margin-top: 2%; */
+  font-family: var(--moat-font);
+  /* font-weight: 700; */
 
   /* position:absolute;
     bottom: 0;
     left: 0;
     width:100%; */
 }
-.sticky-footer .locations {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  color: #272727;
-  background-color: #edf3f8;
-  padding: 3%;
-}
-.sticky-footer .locations h5 {
-  color: #09529b;
-}
-.sticky-footer .locations .location {
-  flex: 1;
-  padding: 0 2%;
-}
+
+
+
 a:visited {
   /* color: inherit; */
   text-decoration: none; /* Ensures no underline change */
@@ -40,12 +31,13 @@ a:visited {
 
 .footer-links a {
   text-decoration: none;
-  color: #d6d6d6; /* Highlight color for links */
+  color: var(--enam-blue);
+  font-weight: 600;
   font-size: 14px;
-  transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.6s ease;
   border-radius: 50px;
   padding: 10px 20px;
-  border: 1px solid #09529b;
+  border: 1px solid #edf3f8;;
 }
 
 .footer-links a:hover {

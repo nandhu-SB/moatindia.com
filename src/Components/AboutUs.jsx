@@ -13,8 +13,9 @@ import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 
 import banner4 from "../assets/banner4.png";
+import elephant from "../assets/elephant.png";
 import banner3 from "../assets/banner3.png";
-
+import moat from "../assets/moat_castle.png";
 import banner5 from "../assets/BANNER5.png";
 
 import banner6 from "../assets/20250207_130121_0002.mp4";
@@ -87,7 +88,7 @@ const AboutUs = () => {
 
       <div className="about-section" id="who-we-are" >
         <div className="about-image">
-          <img src={banner4} alt="About Us" />
+          <img src={elephant} alt="About Us" />
         </div>
         <div className="about-content">
           <h2>Who we are</h2>
@@ -123,10 +124,11 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="moat-image">
-          <video autoPlay loop muted>
+          <img src={moat} alt="Moat" />
+          {/* <video autoPlay loop muted>
             <source src={banner7} type="video/mp4" />
             your browser doesnot support this video
-          </video>
+          </video> */}
         </div>
       </div>
 
@@ -134,12 +136,7 @@ const AboutUs = () => {
         <div className="mission-content">
           <h2>Our Mission</h2>
           <p>
-            We aim to create 500 Billionaires in 20 years or less using
-            emerging moat businesses by compounding money consistently by more
-            than 25% CAGR. To provide innovative, transparent, and sustainable
-            financial solutions that help our clients create long-term wealth.
-            We strive to deliver personalized services with integrity and
-            excellence.
+To compund our client's wealth through well-disciplined , research-driven investments in high quality businesses with enduring competitive advantages - while maintaining integrity, patience , and a deep commitment to long term value creation.
           </p>
         </div>
         <div className="mission-image">
@@ -162,9 +159,9 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="achievements-section"
-        id="achivements"
+        id="achievements"
         
       >
         <div className="achievements-content">
@@ -182,12 +179,12 @@ const AboutUs = () => {
             <source src={banner6} type="video/mp4" />
             your browser doesnot support this video
           </video>
-          {/* <img src={banner5} /> */}
+  
         </div>
-      </div>
+      </div> */}
 
 
-      <Credentials />
+      {/* <Credentials /> */}
 
       <Footer />
       <Whatsapp />

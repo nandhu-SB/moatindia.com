@@ -69,9 +69,45 @@ background-color:#f9f9f9;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-#contact-button button {
+.dropdown-button{
+    background: none;
+  border: 0px solid var(--enam-blue);
+  font-family: var(--moat-font);
+  /* font-size: 16px; */
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  cursor: pointer;
+  color: #3a3a3a;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+}
+.dropdown-button:hover {
+  /* border: 1px solid white; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#contact-button  {
+  background: none;
+  /* border: 0px solid var(--enam-blue); */
+  font-family: var(--moat-font);
+  /* font-size: 16px; */
+  font-weight: 700;
+  font-optical-sizing: auto;
+  font-style: normal;
+  cursor: pointer;
+  /* color: #3a3a3a; */
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
   color: var(--moat-color);
   border: 1px solid var(--moat-color);
+}
+#contact-button:hover {
+  /* border: 1px solid white; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 /* Dropdown Menu */
 .dropdown {
@@ -92,7 +128,7 @@ background-color:#f9f9f9;
   visibility: hidden;
   transform: translateY(-10px);
   transition: opacity 0.3s ease-out, transform 0.5s ease,
-    visibility 0.3s ease-out;
+  visibility 0.3s ease-out;
 }
 /* Show the dropdown when hovering over the nav-item */
 .nav-item:hover .dropdown {

@@ -16,6 +16,7 @@
   cursor: pointer;
   transition: transform 0.3s ease;
   z-index: 10000;
+
 }
 
 .whatsapp-icon:hover {
@@ -30,6 +31,7 @@
 /* Contact Menu */
 .contact-menu {
   position: fixed;
+    font-family: var(--moat-font);
   bottom: 90px; /* Above WhatsApp icon */
   right: 20px;
   width: 350px;

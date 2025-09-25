@@ -42,11 +42,10 @@ const ContactUs = () => {
 
   return (
     <>
-      <Navbar />
+  
       <div className="contact-container">
         <div className="contact-card">
-          <h1>Contact Us</h1>
-          <p>Please fill out the form below.</p>
+
 
           <form onSubmit={handleSubmit}>
             <label htmlFor="from_name">Name</label>
@@ -97,7 +96,7 @@ const ContactUs = () => {
           </form>
         </div>
       </div>
-      <Footer />
+   
     </>
   );
 };

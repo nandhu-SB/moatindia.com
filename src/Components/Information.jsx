@@ -4,7 +4,7 @@ import "./Information.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import GoogleMap from "./GoogleMap";
-
+import ContactUs from "./ContactUs";
 const Information = () => {
   return (
     <>
@@ -12,6 +12,15 @@ const Information = () => {
       <div className="information">
         <div className="info-details">
           <section>
+          <h3>Mail Us</h3>
+          <ContactUs/>
+
+          </section>
+          
+        </div>
+        <div className="info-details">
+          <section>
+            <h3>Address</h3>
                        
             Room No: 3-I, 3rd Floor, National Pearl Star, <br />
             Behind Changampuzha Park Metro Station, <br />

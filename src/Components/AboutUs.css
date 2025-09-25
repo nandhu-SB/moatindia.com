@@ -42,9 +42,9 @@
 .team-section img {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+  /* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
     0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
-    0 32px 16px rgba(0, 0, 0, 0.09);
+    0 32px 16px rgba(0, 0, 0, 0.09); */
 }
 .about-section video,
 .moat-section video,
@@ -54,9 +54,9 @@
 .team-section video {
   width: 100%;
   border-radius: 10px;
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
+  /* box-shadow: 0 2px 1px rgba(0, 0, 0, 0.09), 0 4px 2px rgba(0, 0, 0, 0.09),
     0 8px 4px rgba(0, 0, 0, 0.09), 0 16px 8px rgba(0, 0, 0, 0.09),
-    0 32px 16px rgba(0, 0, 0, 0.09);
+    0 32px 16px rgba(0, 0, 0, 0.09); */
 }
 @media (max-width: 890px) {
   .about-section,

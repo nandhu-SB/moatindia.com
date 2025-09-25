@@ -4,7 +4,7 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer className="sticky-footer">
-      <div className="locations">
+
         {/* <div className="location">
           <h4>Head Office</h4>
           <h5>Moat Financial Services Pvt Ltd</h5>
@@ -37,7 +37,7 @@ const Footer = () => {
             2nd Floor,201 Baani, Golf Course Road, Gurugram, Haryana, 122011
           </p>
         </div> */}
-      </div>
+      
       <div className="footer-links">
         <a href="/FAQ">FAQs</a>
         <a
@@ -51,7 +51,7 @@ const Footer = () => {
         <a href="/NewsLetter">News Letter</a>
 
         <a href="/Disclaimer">Disclaimer</a>
-        <a href="/Information">Contact Us</a>
+   
       </div>
       <p>
         &copy; SEBI REGD PMS INP000004482

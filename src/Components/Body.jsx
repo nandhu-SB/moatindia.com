@@ -3,14 +3,15 @@ import "./Body.css";
 import bannervideo from "../assets/banner_1.mp4";
 import bannervideo3 from "../assets/pyramid.mp4";
 import bannervideo2 from "../assets/enam-india-desk-banner.webp";
-import oceanVideo from "../assets/ocean.mp4";
-import hand from "../assets/PENUP_20250909_121833.png";
+import chess from "../assets/chess.png";
+import hand from "../assets/hand.png";
 
+import oceanVideo from "../assets/ocean.mp4";
 import mainBanner from "../assets/Investments Simplified.png";
 import image1 from "../assets/Homepage_About_us.webp";
 import image2 from "../assets/Homepage_Strategy-1.webp";
 import image3 from "../assets/taj.png";
-
+import baniyan_tree from "../assets/baniyan_tree.png";
 import image4 from "../assets/blog-celebrating-our-achievemens.jpg";
 import image5 from "../assets/blog-rising-profits.jpg";
 import image6 from "../assets/blog-crafting-wealth.jpg";
@@ -137,7 +138,6 @@ const Body = () => {
 
   return (
     <div className="body_div">
-
       <div className="background-video-container">
         <video autoPlay muted loop>
           <source src={oceanVideo} type="video/mp4" />
@@ -146,15 +146,13 @@ const Body = () => {
         {/* <img src={bannervideo2} alt="banner" className="background-image" /> */}
         <div className="overlay-content">
           <h1>Investments Simplified</h1>
-         
-     
         </div>
       </div>
 
       <div className="legacy-section" id="legacy">
         <div className="legacy-image">
           <div className="image-frame">
-            <img src={image3} alt="Legacy" />
+            <img src={baniyan_tree} alt="Legacy" />
           </div>
         </div>
         <div className="legacy-content">
@@ -179,10 +177,15 @@ const Body = () => {
             portfolio management in the vibrant landscape of Indian equities.
           </p>
           <Link to="/Aboutus">
-            <button className="readmore-button">READ MORE</button>
+            <button className="readmore-button">Read More</button>
           </Link>
         </div>
       </div>
+      <p className="quote">
+        <i>“Success is not always about greatness. It’s about consistency.
+        Consistent hard work leads to success. Greatness will come.”</i>
+      </p>
+      <p className="dhoni">- MS Dhoni</p>
       <div className="numbers">
         <div className="numbers-sub" ref={yearsRef} data-id="years">
           {isVisible.years && (
@@ -227,14 +230,14 @@ const Body = () => {
       <div className="legacy-section" id="legacy">
         <div className="legacy-image">
           <div className="image-frame">
-            {/* <img src={image2} alt="Legacy" /> */}
-            <video loop muted autoPlay>
+            <img src={chess} alt="Legacy" />
+            {/* <video loop muted autoPlay>
               <source src={bannervideo3} />
-            </video>
+            </video> */}
           </div>
         </div>
         <div className="legacy-content">
-          <h2>Strategy Designed to give more Alpha</h2>
+          <h2>Strategy Designed to deliver Alpha</h2>
           <p>
             Our investment strategy is meticulously engineered to generate
             consistent alpha by combining the power of research with deep
@@ -247,8 +250,8 @@ const Body = () => {
             allocation, the strategy aims to outperform benchmarks and deliver
             superior risk-adjusted returns over the long term.
           </p>
-          <Link to="/Aboutus">
-            <button className="readmore-button">READ MORE</button>
+          <Link to="/Schemes">
+            <button className="readmore-button">Read More</button>
           </Link>
         </div>
       </div>
@@ -292,11 +295,6 @@ const Body = () => {
             See Our Full Team
           </button>
         </Link>
-
-        <p className="quote">
-          " Disciplined investment approach always returns superior performance
-          "
-        </p>
       </div>
       {/* <div className="media-container">
         <Link to="/Communique4">
@@ -314,7 +312,7 @@ const Body = () => {
                 The wider the moat the stronger is the castle that it
                 surrounds...
               </p>
-              <button className="readmore-button">READ MORE</button>
+              <button className="readmore-button">Read More</button>
             </div>
           </div>
         </Link>
@@ -337,7 +335,7 @@ const Body = () => {
                 for May 2024 🚀
               </p>
 
-              <button className="readmore-button">READ MORE</button>
+              <button className="readmore-button">Read More</button>
             </div>
           </div>
         </Link>
@@ -359,7 +357,7 @@ const Body = () => {
                 Financial Services Private Ltd Our diligently made investment
                 fund presents a thriving opportunity to assure your...
               </p>
-              <button className="readmore-button">READ MORE</button>
+              <button className="readmore-button">Read More</button>
             </div>
           </div>
         </Link>

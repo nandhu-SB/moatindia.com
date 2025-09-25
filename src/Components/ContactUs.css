@@ -1,24 +1,25 @@
 /* Global Styles */
 
-body {
-  background-color: #f9f9f9;
-}
+
 
 /* Container Styles */
 .contact-container {
+  /* background:#f9f9f9; */
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
+  font-family: var(--moat-font)
+  /* min-height: 100vh; */
+  /* padding: 20px; */
 }
 
 .contact-card {
-  background: #ffffff;
+  /* background: #ffffff; */
+  
   padding: 40px;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
 }
 

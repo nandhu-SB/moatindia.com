@@ -21,12 +21,12 @@ const InvestmentPhilosohpy = () => {
       <Navbar />
       <div className="investment-philosophy">
         <div className="sections">
-          <div className="background-video-container2">
-            <video autoPlay loop muted className="background-video2">
+          {/* <div className="background-video-container2"> */}
+            {/* <video autoPlay loop muted className="background-video2">
               <source src={banner6} type="video/mp4" />
               Your browser does not support the video tag
-            </video>
-          </div>
+            </video> */}
+          {/* </div> */}
           <h2 className="section-title">Investment Philosophy</h2>
           <p className="section-text">
             Our investment approach keeps us fixated on our goal of picking
@@ -71,7 +71,7 @@ const InvestmentPhilosohpy = () => {
           </video>
         </div> */}
 
-        <div className="sections" data-aos="fade-right">
+        <div className="sections" >
           <div className="pillars">
             <h2>The Pillars of our Investment Philosophy</h2>
             <div className="value-cards">
@@ -124,7 +124,7 @@ const InvestmentPhilosohpy = () => {
                 <div
                   className="value-card"
                   key={value.title}
-                  data-aos="flip-left"
+                  
                 >
                   <div className="value-card-content">
                     <h3 className="value-card-title">{value.title}</h3>
@@ -150,9 +150,8 @@ const InvestmentPhilosohpy = () => {
           <h2>Porter model</h2>
           <div className="quote">
             <p className="context">
-              The essence of strategy is choosing what not to do
-            </p>
-            <p className="authot">~ Michael Porter.</p>
+              <i>The essence of strategy is choosing what not to do</i>
+<br/>- Michael Porter.</p>
           </div>
 
           <p>
@@ -223,7 +222,7 @@ const InvestmentPhilosohpy = () => {
               <div
                 className="value-card"
                 key={value.title}
-                data-aos="flip-left"
+                
               >
                 <div className="value-card-content">
                   <h3 className="value-card-title">{value.title}</h3>
@@ -241,10 +240,10 @@ const InvestmentPhilosohpy = () => {
           </p>
         </div>
 
-        <div className="sections" data-aos="fade-right">
+        <div className="sections" >
           <h2>Defining the Moat of a Company</h2>
           <div className="value-cards">
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               <h3>Cost Advantage</h3>
               <p>
                 Companies with significant cost advantages can undercut the
@@ -257,7 +256,7 @@ const InvestmentPhilosohpy = () => {
               </p>
             </div>
 
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
               <h3>Intangibles</h3>
               <p>
@@ -269,8 +268,7 @@ const InvestmentPhilosohpy = () => {
                 profits.
               </p>
             </div>
-
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               <h3>Differentiation USP</h3>
               <p>
                 A differentiation strategy involves developing unique goods or
@@ -280,7 +278,7 @@ const InvestmentPhilosohpy = () => {
                 Unique selling point.
               </p>
             </div>
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               <h3>Size Advantage</h3>
               <p>
                 Being big can sometimes, in itself, create an economic moat for
@@ -289,7 +287,7 @@ const InvestmentPhilosohpy = () => {
                 scale. No competition can produce such quantity of volumes.
               </p>
             </div>
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               <h3>Backward and Forward Integration</h3>
               <p>
                 This strategy can be also used to get a competitive advantage
@@ -298,7 +296,7 @@ const InvestmentPhilosohpy = () => {
                 profitability.
               </p>
             </div>
-            <div className="value-card" data-aos="flip-left">
+            <div className="value-card" >
               <h3>Network Effect</h3>
               <p>
                 scale of sales and distribution creates a challenge for other
@@ -308,7 +306,7 @@ const InvestmentPhilosohpy = () => {
             </div>
           </div>
         </div>
-        <div className="sections" data-aos="fade-right">
+        <div className="sections" >
           <h2>Young Growth as Leaders of Tomorrow</h2>
           <p>
             A company in an emerging phase is seen as a highly promising
@@ -319,52 +317,52 @@ const InvestmentPhilosohpy = () => {
             advantages towards following:
           </p>
           <div className="value-cards-next">
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>Unique selling points about its products.</h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>Control over costs in much permanent way.</h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>
                 Peter’s forces slowly and steadily show good things growing for
                 the company.
               </h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>
                 Position of a company in markets against rivals is improving
                 with customer satisfaction, increase in revenue from the same
                 customers, and the addition of new customers.
               </h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>
                 More Capexes and higher utilization cycles going on for multiple
                 years.
               </h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>
                 Technology advances with JV and tie-ups with the best of
                 players.
               </h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>
                 Company leveraging upon another partner’s or customers network
                 or brands.
               </h3>
             </div>
-            <div className="value-card-next" data-aos="flip-left">
-              {/* <img src="icons/intangibles.svg" alt="Intangibles Icon" className="moat-icon"> */}
+            <div className="value-card-next" >
+              
               <h3>Reinvesting of capital at regular intervals.</h3>
             </div>
           </div>
