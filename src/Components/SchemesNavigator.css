@@ -9,6 +9,7 @@
 
 .schemes-navigator-container p {
   /* font-family: var(--primary-font); */
+  /* color: white; */
 }
 
 .schemes-navigator-container .cards {
@@ -17,7 +18,7 @@
   align-items: center;
   flex-wrap: wrap; /* Ensures responsiveness */
 }
-
+ 
 .schemes-navigator-container .card {
   display: flex;
   margin: 3%;

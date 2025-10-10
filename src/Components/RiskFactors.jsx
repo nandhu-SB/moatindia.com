@@ -246,7 +246,7 @@ const RiskFactors = () => {
         </div>
 
         <div className="risk-section">
-          <h4>SPECIAL CONSIDERATIONS:</h4>
+          <h4>Special Considerations:</h4>
           <ul typeof="disc">
             <li>
               The portfolio manager or its associates are not responsible or

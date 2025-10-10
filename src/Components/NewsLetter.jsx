@@ -5,9 +5,14 @@ import Footer from "./Footer";
 
 const Newsletter = () => {
   const pdfFiles = [
+    
     {
-      file: "Special-Report-On-World-Economy.pdf",
-      name: "Special Report on World Economy",
+      file: "Emerging Moat - Factor Based Portfolio.pdf",
+      name: "Insights into Emerging Moat - Factor Based Portfolio",
+    },
+        {
+      file: "Moderate Compounders.pdf",
+      name: "Insights into Moderate Compounders",
     },
     {
       file: "Monthly-Newsletter-for-December-2023.pdf",
@@ -47,7 +52,7 @@ const Newsletter = () => {
     <>
       <Navbar />
       <div className="newsletter-container">
-        <h3>Newsletters</h3>
+        <h3>Reading Room</h3>
         <div className="newsletter-list">
           {pdfFiles.map(({ file, name }) => (
             <div

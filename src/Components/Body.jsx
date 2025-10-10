@@ -4,6 +4,7 @@ import bannervideo from "../assets/banner_1.mp4";
 import bannervideo3 from "../assets/pyramid.mp4";
 import bannervideo2 from "../assets/enam-india-desk-banner.webp";
 import chess from "../assets/chess.png";
+import pooram  from  "../assets/main_image.png";
 import hand from "../assets/hand.png";
 
 import oceanVideo from "../assets/ocean.mp4";
@@ -139,13 +140,13 @@ const Body = () => {
   return (
     <div className="body_div">
       <div className="background-video-container">
-        <video autoPlay muted loop>
+        {/* <video autoPlay muted loop>
           <source src={oceanVideo} type="video/mp4" />
-        </video>
+        </video> */}
         {/* <img src={hand} alt="hand" className="background-image" /> */}
-        {/* <img src={bannervideo2} alt="banner" className="background-image" /> */}
+        <img src={pooram} alt="banner" className="background-image" />
         <div className="overlay-content">
-          <h1>Investments Simplified</h1>
+          {/* <h1>Investments Simplified</h1> */}
         </div>
       </div>
 
@@ -158,23 +159,8 @@ const Body = () => {
         <div className="legacy-content">
           <h2>A Legacy Based On Sustained Performance</h2>
           <p>
-            Moat Financial Services is a growing portfolio management service
-            provider.Since 2013, we have nurtured long-standing relationships
-            with domestic and global investors assisting them in managing their
-            equity portfolios in the Indian market.we have steadily built a
-            reputation for integrity, discipline, and performance in the Indian
-            equity markets. Our core philosophy is rooted in time-tested
-            investment principles, enriched by the power of data analytics,
-            research-driven insights, and a deep understanding of market
-            dynamics.
-            <br />
-            At Moat Financial Services, we are more than just asset managers—we
-            are long-term wealth partners. Our team continuously adapts to
-            evolving market conditions while staying true to the principles that
-            define us: consistency, quality, and a disciplined focus on value
-            creation. As we continue to grow, our mission remains steadfast—to
-            empower our clients through smart, strategic, and personalized
-            portfolio management in the vibrant landscape of Indian equities.
+At Moat Financial Services, we are more than just asset managers—we are long-term wealth partners. Since 2013, we have nurtured long-standing relationships with domestic and global investors assisting them in managing their equity portfolios in the Indian market. Our core philosophy is rooted in time-tested investment principles, enriched by the power of data analytics, research-driven insights, and a deep understanding of market dynamics. As we continue to grow, our mission remains steadfast—to empower our clients through smart, strategic, and personalized portfolio management in the vibrant landscape of Indian equities. We believe in protecting the client’s hard-earned money and creating generational wealth is a noble pursuit.
+        
           </p>
           <Link to="/Aboutus">
             <button className="readmore-button">Read More</button>

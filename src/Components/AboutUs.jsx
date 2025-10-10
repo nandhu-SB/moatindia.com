@@ -14,10 +14,11 @@ import leaderImage3 from "../assets/team/sudheesh-m.jpg";
 
 import banner4 from "../assets/banner4.png";
 import elephant from "../assets/elephant.png";
+import buddha from "../assets/buddha.png";
 import banner3 from "../assets/banner3.png";
 import moat from "../assets/moat_castle.png";
 import banner5 from "../assets/BANNER5.png";
-
+import kadhakali from "../assets/kadhakali.png";
 import banner6 from "../assets/20250207_130121_0002.mp4";
 import banner7 from "../assets/banner7.mp4";
 
@@ -133,20 +134,21 @@ const AboutUs = () => {
       </div>
 
       <div className="mission-section" id="mission" >
+                <div className="mission-image">
+          <img src={kadhakali} />
+        </div>
         <div className="mission-content">
           <h2>Our Mission</h2>
           <p>
 To compund our client's wealth through well-disciplined , research-driven investments in high quality businesses with enduring competitive advantages - while maintaining integrity, patience , and a deep commitment to long term value creation.
           </p>
         </div>
-        <div className="mission-image">
-          <img src={banner5} />
-        </div>
+
       </div>
 
       <div className="vision-section" id="vision" >
         <div className="vision-image">
-          <img src={banner3} />
+          <img src={buddha} />
         </div>
         <div className="vision-content">
           <h2>Our Vision</h2>

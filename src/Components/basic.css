@@ -4,29 +4,19 @@
   /* background-color: rgb(58, 58, 58); */
 }
 
-.moat-container .pillar h1,
-.moat-container .pillar h2,
-.moat-container .pillar h3,
-.moat-container .pillar h4,
-.moat-container .squares li,
-.moat-container .squares li,
-.moat-container .squares li,
-.moat-container .squares li {
-  /* font-family: var(--heading-font); */
-  color: #ffffff;
-  /* font-size: 120%; */
-}
-.moat-container .pillar p,
-.moat-container .squares p {
-  /* color: white; */
-}
-
 .moat-container h1,
 .moat-container h2,
 .moat-container h3,
-.moat-container h4 {
+.moat-container h4{
+  font-family:var(--heading-font);
+  color: var(--enam-blue);
+}
+
+
+
+.moat-container button h4 {
   font-family: var(--heading-font);
-  /* color: #116b8c; */
+  color: #cef2ff;
 }
 /* #mission {
  
@@ -81,22 +71,25 @@
   padding: 2%; */
   margin: 20px 0;
   border-radius: 20px;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
 }
 .squares {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 0;
+  /* border: 1px solid var(--enam-blue); */
 }
 .moat-container ul {
   list-style: none;
+  /* border: 1px solid var(--enam-blue); */
 }
 .squares li {
   /* border: 1px solid black; */
+  border: 1px solid var(--enam-blue);
   padding: 2%;
   margin: 2%;
-  /* border-radius: 10px; */
+  border-radius: 10px;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
   flex-basis: 200px;
@@ -114,6 +107,7 @@
   justify-content: space-around;
 }
 .moat-container .pillar {
+  display: flex;
   flex-basis: 200px;
   flex-grow: 1;
   display: flex;
@@ -126,6 +120,7 @@
   margin: 2%;
   padding: 2%;
   background-color: var(--enam-blue);
+  color: #cef2ff;
 }
 .moat-container button {
   transition: all 0.3s ease;
