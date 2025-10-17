@@ -136,6 +136,7 @@ const Navbar = () => {
           ]}
         /> */}
         <Link to="/Schemes"> <button className="dropdown-button">Strategy</button></Link>
+        <Link to="/NewsLetter"> <button className="dropdown-button">Reading Room</button></Link>
 
 
         <Dropdown

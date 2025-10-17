@@ -176,7 +176,7 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
         <div className="numbers-sub" ref={yearsRef} data-id="years">
           {isVisible.years && (
             <Roller
-              value={11}
+              value={12}
               suffix="+"
               staggering
               align="center"
@@ -189,7 +189,7 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
         <div className="numbers-sub" ref={millionRef} data-id="million">
           {isVisible.million && (
             <Roller
-              value={250}
+              value={280}
               suffix="Cr+"
               align="center"
               staggering
@@ -202,7 +202,7 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
         <div className="numbers-sub" ref={customersRef} data-id="customers">
           {isVisible.customers && (
             <Roller
-              value={200}
+              value={250}
               suffix="+"
               staggering
               align="center"

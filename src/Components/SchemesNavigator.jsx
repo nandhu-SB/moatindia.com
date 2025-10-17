@@ -15,10 +15,12 @@ const schemes = [
     path: "/newsletter/Moderate Compounders.pdf",
     isExternal: true,
   },
-  { name: "Special Opportunities", path: "/SpecialOpportunities" },
+  
 ];
 
 const schemes2 = [
+  
+  { name: "Special Opportunities", path: "/SpecialOpportunities" },
   { name: "UpperCrust Wealth Fund", path: "/UpperCrustWealthFund" },
   // { name: "UpperCrust Growth Fund", path: "/UpperCrustGrowthFund" },
   // { name: "UpperCrust Prosperity Fund", path: "/UpperCrustProsperityFund" },

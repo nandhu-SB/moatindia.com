@@ -14,38 +14,22 @@ const Newsletter = () => {
       file: "Moderate Compounders.pdf",
       name: "Insights into Moderate Compounders",
     },
-    {
-      file: "Monthly-Newsletter-for-December-2023.pdf",
-      name: "December 2023 Newsletter",
+                    {
+      file: "HBL Engineering-1.pdf",
+      name: "HBL Engineering - Research",
+ 
     },
-    {
-      file: "Monthly-Newsletter-for-November-2023.pdf",
-      name: "November 2023 Newsletter",
+            {
+      file: "HEALTHCARE SECTOR .pdf",
+      name: "Healthcare Sector - An Overview",
+ 
     },
-    {
-      file: "Monthly-Newsletter-for-October-2023.pdf",
-      name: "October 2023 Newsletter",
+                {
+      file: "Nilkamal Ltd.pdf",
+      name: "Nilkamal Ltd - Research",
+ 
     },
-    {
-      file: "Monthly-Newsletter-for-September-2023.pdf",
-      name: "September 2023 Newsletter",
-    },
-    {
-      file: "Monthly-Newsletter-For-July-2023.pdf",
-      name: "July 2023 Newsletter",
-    },
-    {
-      file: "Monthly-Newsletter-For-June-2023.pdf",
-      name: "June 2023 Newsletter",
-    },
-    {
-      file: "Monthly-Newsletter-For-may-2023.pdf",
-      name: "May 2023 Newsletter",
-    },
-    {
-      file: "Monthly-Newsletter-and-Budget-Highlights.pdf",
-      name: "December 2022 Newsletter and Budget Highlights",
-    },
+
   ];
 
   return (

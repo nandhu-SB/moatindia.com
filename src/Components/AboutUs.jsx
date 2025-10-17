@@ -89,7 +89,7 @@ const AboutUs = () => {
 
       <div className="about-section" id="who-we-are" >
         <div className="about-image">
-          <img src={elephant} alt="About Us" />
+          <img src={buddha} alt="About Us" />
         </div>
         <div className="about-content">
           <h2>Who we are</h2>
@@ -97,7 +97,7 @@ const AboutUs = () => {
             Founded in 2013, we are experts in professional investment
             management, dedicated to identifying early-stage multi-bagger
             opportunities and maximizing value for our clients. <br />
-            We strongly believe that protecting and prospering our clients hard
+            We strongly believe that protecting and prospering our client's hard
             earned money is a noble business.This is what drives us to always be
             sincere and honest
             <br />
@@ -134,22 +134,22 @@ const AboutUs = () => {
       </div>
 
       <div className="mission-section" id="mission" >
-                <div className="mission-image">
+                {/* <div className="mission-image">
           <img src={kadhakali} />
-        </div>
+        </div> */}
         <div className="mission-content">
           <h2>Our Mission</h2>
           <p>
-To compund our client's wealth through well-disciplined , research-driven investments in high quality businesses with enduring competitive advantages - while maintaining integrity, patience , and a deep commitment to long term value creation.
+To compound our client's wealth through well-disciplined , research-driven investments in high quality businesses with enduring competitive advantages - while maintaining integrity, patience , and a deep commitment to long term value creation.
           </p>
         </div>
 
       </div>
 
       <div className="vision-section" id="vision" >
-        <div className="vision-image">
+        {/* <div className="vision-image">
           <img src={buddha} />
-        </div>
+        </div> */}
         <div className="vision-content">
           <h2>Our Vision</h2>
           <p>
