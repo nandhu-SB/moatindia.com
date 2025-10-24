@@ -6,13 +6,22 @@
 
 .moat-container h1,
 .moat-container h2,
-.moat-container h3,
+
 .moat-container h4{
   font-family:var(--heading-font);
   color: var(--enam-blue);
 }
+.moat-container h2{
+  font-family:var(--heading-font);
+  color: #000000;
 
+}
 
+.moat-container h3{
+  font-family:var(--heading-font);
+  color: #cef2ff;
+
+}
 
 .moat-container button h4 {
   font-family: var(--heading-font);

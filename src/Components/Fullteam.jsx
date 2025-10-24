@@ -75,7 +75,7 @@ const Fullteam = () => {
       image: research4,
       name: "Midhun Joe James",
       title: "Head of strategy and investment",
-      info: "Midhun Joe James is a seasoned expert with over 23 years of corporate experience in leading companies in India and Europe including the Tata group, Bharti Airtel etc. Educationally, Midhun holds an MBA in Finance and Marketing and B.Tech in Electronics and Communication Engineering. Further enhancing his credentials, he is a NET-certified management professional and a NISM-certified Research Analyst, underscoring his profound expertise in financial markets and investment strategies. Midhun’s deep passion lies in finance, particularly Behavioral Finance, Capital Markets, and Value Investing. He is a voracious reader who meticulously follows Fundamental Research, Annual Reports, and Credit Rating Reports, continuously enriching his analytical acumen and strategic insights.As Head of Strategy and Investments, Midhun’s vision and analytical prowess position him uniquely to guide investment decisions, shape strategic direction, and deliver sustainable growth for our clients and stakeholders alike.",
+      info: "Midhun Joe James is a seasoned expert with over 23 years of corporate experience in leading companies in India and Europe, including the Tata group, Bharti Airtel, etc. Educationally, Midhun holds an MBA in Finance and Marketing and a B.Tech in Electronics and Communication Engineering. Further enhancing his credentials, he is a NET-certified management professional and has successfully cleared the NISM Series XXI-B: Portfolio Managers Certification Examination and the NISM Series XV: Research Analyst Certification Examination, underscoring his profound expertise in financial markets and investment strategies. Midhun’s deep passion lies in finance, particularly Behavioural Finance, Capital Markets, and Value Investing. He is a voracious reader who meticulously follows Fundamental Research, Annual Reports, and Credit Rating Reports, continuously enriching his analytical acumen and strategic insights. As Head of Strategy and Investments, Midhun’s vision and analytical prowess position him uniquely to guide investment decisions, shape strategic direction, and deliver sustainable growth for our clients and stakeholders alike.",
     },
     {
       id: 2,
@@ -89,14 +89,14 @@ const Fullteam = () => {
       image: research2,
       name: "Ben Benny",
       title: "Equity Research Analyst",
-      info: "Ben is an equity research analyst with a solid foundation in financial analysis, having passed CFA Level 1. Currently preparing for CFA Level 2, he is committed to advancing his skills in investment research and valuation.",
+      info: "Ben is an Equity Research Analyst with a strong foundation in financial analysis and valuation. He holds a Bachelor’s degree in Commerce and has successfully cleared CFA Level I. In addition, he has cleared the NISM Series XXI-B: Portfolio Managers Certification Examination and the NISM Series XV: Research Analyst Certification Examination. Currently preparing for CFA Level II, Ben is dedicated to deepening his expertise in investment research and equity valuation.",
     },
     {
       id: 4,
       image: research1,
       name: "Jyothish Vijayan",
       title: "Equity Research Analyst",
-      info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
+      info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He has also cleared the NISM Series XV: Research Analyst Certification Examination. Jyothish represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
     },
         {
       id: 5,

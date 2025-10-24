@@ -5,9 +5,19 @@ import Footer from "./Footer";
 
 const Newsletter = () => {
   const pdfFiles = [
+        {
+      file: "Article about MOAT.pdf",
+      name: "Unpacking the mystery of Moat",
+    },
+
+
     
     {
       file: "Emerging Moat - Factor Based Portfolio.pdf",
+
+
+
+      
       name: "Insights into Emerging Moat - Factor Based Portfolio",
     },
         {

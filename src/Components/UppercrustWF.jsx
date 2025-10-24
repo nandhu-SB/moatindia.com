@@ -30,7 +30,7 @@ const UpperCrustWealthFund = () => {
               <h3>Sustainable Strong MOATs</h3>
             </div>
             <div className="pillar">
-              <h3>Portfolio Construction & Risk Management</h3>
+              <h3>Portfolio Construction <br/>& Risk Management</h3>
             </div>
           </div>
         </section>
@@ -85,15 +85,15 @@ const UpperCrustWealthFund = () => {
 
         <div className="pillars">
           <div className="pillar">
-            <h2>Performance</h2>
-            <p>Last 10 Years Return (2012 - 2022): 20.75%</p>
+            <h3>Performance</h3>
+            <p>10 Yr (2012 - 2022): 20.75%</p>
           </div>
           <div className="pillar">
-            <h2>Suitable Investor</h2>
+            <h3>Suitable Investor</h3>
             <p>Aggressive</p>
           </div>
           <div className="pillar">
-            <h2>Investment Horizon</h2>
+            <h3>Investment Horizon</h3>
             <p>3 - 5 Years</p>
           </div>
         </div>

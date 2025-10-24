@@ -27,12 +27,15 @@ import UpperCrustGrowthFund from "./Components/UpperCrustGrowthFund";
 import UpperCrustProsperityFund from "./Components/UpperCrustProsperityFund";
 import Communique4 from "./Components/Communique4";
 import DirectOnboarding from "./Components/DirectOnboarding";
+import BusinessOpportunitiy from "./Components/BusinessOpportunitiy";
+import BusinessOpportunityContact from "./Components/BusinessOpportunityContact";
 
 
 function App() {
   return (
     <>
       <BrowserRouter>
+      
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -53,6 +56,11 @@ function App() {
           <Route exact path="/NewsLetter" element={<NewsLetter />} />
           <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
           <Route exact path="/DirectOnboarding" element={<DirectOnboarding/>}/>
+          <Route exact path="/BusinessOpportunity" element={<BusinessOpportunitiy/>}/>
+          <Route exact path="/BusinessOpportunityContact" element={<BusinessOpportunityContact/>}/>
+          
+
+          
           <Route
             exact
             path="/SpecialOpportunities"
