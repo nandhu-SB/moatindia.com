@@ -65,23 +65,22 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "Complaints Data September 2025.pdf",
+      file: "Complaints Data October 2025.pdf",
 
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Emerging Moat Factsheet August 2025.pdf",
+      file: "Fact Sheet - Emerging Moat October 2025.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
-    
-      file: "Moderate Compounders Factsheet August 2025.pdf",
+      file: "Fact Sheet - Moderate Compounders October 2025.pdf",
       name: "Moderate Compounders Factsheet",
     },
 
     {
-      file: "Special Opportunities Factsheet August 2025.pdf",
+      file: "Fact Sheet - Special Opportunties Fund October 2025.pdf",
 
       name: "Special Opportunities Factsheet",
     },
@@ -90,9 +89,9 @@ const Navbar = () => {
     //   name: "UpperCrust Wealth Fund Factsheet",
     // },
     {
-      file: "Monthly and Yearly Performance - September 2025 Moat & Uppercrust.pdf",
+      file: "Monthly and Yearly Performance October 2025 Moat & Uppercrust.pdf",
       name: "Monthly and Yearly Performance Report",
-    }
+    },
   ];
 
   return (
@@ -123,8 +122,10 @@ const Navbar = () => {
             { to: "/AboutUs#credentials", label: "Credentials" },
           ]}
         /> */}
-       <Link to="/AboutUs"> <button className="dropdown-button">About Us</button></Link>
-        
+        <Link to="/AboutUs">
+          {" "}
+          <button className="dropdown-button">About Us</button>
+        </Link>
 
         {/* <Dropdown
           title="Strategy"
@@ -135,10 +136,37 @@ const Navbar = () => {
             { to: "/Schemes", label: "Our Schemes" },
           ]}
         /> */}
-        <Link to="/Schemes"> <button className="dropdown-button">Strategy</button></Link>
-        <Link to="/BusinessOpportunity"> <button className="dropdown-button">Business Opportunity</button></Link>
-        <Link to="/NewsLetter"> <button className="dropdown-button">Reading Room</button></Link>
+        <Link to="/Schemes">
+          {" "}
+          <button className="dropdown-button">Strategy</button>
+        </Link>
+        <Link to="/BusinessOpportunity">
+          {" "}
+          <button className="dropdown-button">Business Opportunity</button>
+        </Link>
 
+        <Dropdown
+          title="Reading Room"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            {
+              to: "/NewsLetter",
+              label: "Articles",
+              external: false,
+            },
+            {
+              to: "/Concall",
+              label: "Concalls",
+              external: false,
+            },
+          ]}
+        />
+
+        {/* <Link to="/NewsLetter">
+          {" "}
+          <button className="dropdown-button">Reading Room</button>
+        </Link> */}
 
         <Dropdown
           title="Services"
@@ -205,14 +233,15 @@ const Navbar = () => {
             { to: "/ContactUs", label: "Mail us" },
           ]}
         /> */}
-        
-          <Link to="/Information"><button
-          id="contact-button"
-          // onClick={() => (window.location.href = "/Information")}
-        >Contact Us</button></Link>
-          
-        
-        
+
+        <Link to="/Information">
+          <button
+            id="contact-button"
+            // onClick={() => (window.location.href = "/Information")}
+          >
+            Contact Us
+          </button>
+        </Link>
       </div>
     </nav>
   );

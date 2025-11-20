@@ -123,6 +123,10 @@ const AboutUs = () => {
             businesses attract competition and `moats’ protect them from the
             competition that wants to move into their profit pool!
           </p>
+                    <Link to="/newsletter/Article about MOAT.pdf" target="_blank">
+                    
+                      <button className="readmore-button">Read More</button>
+                    </Link>
         </div>
         <div className="moat-image">
           <img src={moat} alt="Moat" />

@@ -17,7 +17,7 @@ import PrivacyPolicy from "./Components/PrivacyPolicy";
 import Communique1 from "./Components/Communique1";
 import Communique2 from "./Components/Communique2";
 import Communique3 from "./Components/Communique3";
-import NewsLetter from "./Components/newsLetter";
+import NewsLetter from "./Components/NewsLetter";
 import SchemesNavigator from "./Components/SchemesNavigator";
 import EmergingMoat from "./Components/EmergingMoat";
 import SpecialOpportunities from "./Components/SpecialOpportunities";
@@ -29,6 +29,7 @@ import Communique4 from "./Components/Communique4";
 import DirectOnboarding from "./Components/DirectOnboarding";
 import BusinessOpportunitiy from "./Components/BusinessOpportunitiy";
 import BusinessOpportunityContact from "./Components/BusinessOpportunityContact";
+import Concall from "./Components/Concall";
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           <Route exact path="/Communique3" element={<Communique3 />} />
           <Route exact path="/Communique4" element={<Communique4 />} />
           <Route exact path="/NewsLetter" element={<NewsLetter />} />
+          <Route exact path="/Concall" element={<Concall/>} />
           <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
           <Route exact path="/DirectOnboarding" element={<DirectOnboarding/>}/>
           <Route exact path="/BusinessOpportunity" element={<BusinessOpportunitiy/>}/>

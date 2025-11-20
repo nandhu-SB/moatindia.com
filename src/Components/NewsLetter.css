@@ -11,7 +11,7 @@
 }
 .newsletter-container h3 {
   font-size: 40px;
-  font-family: var(--heading-font);
+  font-family: var(--moat-font);
 }
 /* Newsletter List */
 .newsletter-list {
@@ -20,6 +20,15 @@
 
   gap: 15px;
 }
+.preview-wrapper {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background: #fafafa;
+}
+
 object {
   pointer-events: none;
   height: 400px;
@@ -33,9 +42,18 @@ object {
   background: #f9f9f9;
   transition: box-shadow 0.3s ease;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   /* height: 100%; */
 }
-
+.pdf-preview {
+  width: 80%;
+  height: 250px;       /* Set preview height */
+  background: #f3f3f3;
+  border-bottom: 1px solid #eee;
+}
 .newsletter-item:hover {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
 }
@@ -64,7 +82,7 @@ object {
 /* Newsletter Name */
 .newsletter-name {
   font-size: 16px;
-  font-family: var(--primary-font);
+  font-family: var(--moat-font);
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
