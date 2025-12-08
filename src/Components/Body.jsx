@@ -1,30 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Body.css";
-import bannervideo from "../assets/banner_1.mp4";
-import bannervideo3 from "../assets/pyramid.mp4";
-import bannervideo2 from "../assets/enam-india-desk-banner.webp";
 import chess from "../assets/chess.png";
-import pooram  from  "../assets/main_image.png";
-import hand from "../assets/hand.png";
+import pooram from "../assets/main_image.png";
 
-import oceanVideo from "../assets/ocean.mp4";
-import mainBanner from "../assets/Investments Simplified.png";
-import image1 from "../assets/Homepage_About_us.webp";
-import image2 from "../assets/Homepage_Strategy-1.webp";
-import image3 from "../assets/taj.png";
 import baniyan_tree from "../assets/baniyan_tree.png";
-import image4 from "../assets/blog-celebrating-our-achievemens.jpg";
-import image5 from "../assets/blog-rising-profits.jpg";
-import image6 from "../assets/blog-crafting-wealth.jpg";
-import moat from "../assets/moat.jpg";
 
-import biju from "../assets/team/biju-john.jpg";
-import fazal from "../assets/team/Fazal-Hameed.jpg";
-import Section from "./Section";
-// import handshake4 from "../assets/handshake4.jpg";
 import { Roller } from "@fecapark/number-rolling";
-import { Link, useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import leaderImage1 from "../assets/team/biju-john.jpg";
 import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
@@ -34,17 +16,7 @@ import research2 from "../assets/team/ben.jpg";
 import research3 from "../assets/team/nandhu-sb.jpg";
 import research4 from "../assets/team/Midhun Profile Pic 2.jpg";
 
-const Card = ({ image, name, title, onClick }) => (
-  <div className="div-cards-image" data-aos="fade-right" onClick={onClick}>
-    <img src={image} className="cards-image" alt={`Photo of ${name}`} />
-    <p className="card-text">{name}</p>
-    <p className="card-text">{title}</p>
-  </div>
-);
-
 const Body = () => {
-  const navigate = useNavigate();
-
   const research = [
     {
       id: 1,
@@ -52,7 +24,7 @@ const Body = () => {
       name: "Midhun Joe James",
       title: "Head of strategy and investment",
       info: "Midhun Joe James is a seasoned expert with over 23 years of corporate experience in leading companies in India and Europe, including the Tata group, Bharti Airtel, etc. Educationally, Midhun holds an MBA in Finance and Marketing and a B.Tech in Electronics and Communication Engineering. Further enhancing his credentials, he is a NET-certified management professional and has successfully cleared the NISM Series XXI-B: Portfolio Managers Certification Examination and the NISM Series XV: Research Analyst Certification Examination, underscoring his profound expertise in financial markets and investment strategies. Midhun’s deep passion lies in finance, particularly Behavioural Finance, Capital Markets, and Value Investing. He is a voracious reader who meticulously follows Fundamental Research, Annual Reports, and Credit Rating Reports, continuously enriching his analytical acumen and strategic insights. As Head of Strategy and Investments, Midhun’s vision and analytical prowess position him uniquely to guide investment decisions, shape strategic direction, and deliver sustainable growth for our clients and stakeholders alike.",
-   },
+    },
     {
       id: 2,
       image: research3,
@@ -66,14 +38,14 @@ const Body = () => {
       name: "Ben Benny",
       title: "Equity Research Analyst",
       info: "Ben is an Equity Research Analyst with a strong foundation in financial analysis and valuation. He holds a Bachelor’s degree in Commerce and has successfully cleared CFA Level I. In addition, he has cleared the NISM Series XXI-B: Portfolio Managers Certification Examination and the NISM Series XV: Research Analyst Certification Examination. Currently preparing for CFA Level II, Ben is dedicated to deepening his expertise in investment research and equity valuation.",
-      },
+    },
     {
       id: 4,
       image: research1,
       name: "Jyothish Vijayan",
       title: "Equity Research Analyst",
       info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He has also cleared the NISM Series XV: Research Analyst Certification Examination. Jyothish represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
-       },
+    },
   ];
   const leaders = [
     {
@@ -144,71 +116,112 @@ const Body = () => {
           <source src={oceanVideo} type="video/mp4" />
         </video> */}
         {/* <img src={hand} alt="hand" className="background-image" /> */}
-        <img src={pooram} alt="banner" className="background-image" />
-        <div className="overlay-content">
-          {/* <h1>Investments Simplified</h1> */}
-        </div>
+        <img
+          src={pooram}
+          alt="Traditional Kerala Pooram festival illustration used as homepage banner"
+          className="background-image"
+        />
+        <div className="overlay-content"></div>
       </div>
 
-      <div className="legacy-section" id="legacy">
+      <div
+        className="legacy-section"
+        id="legacy"
+        role="region"
+        aria-label="Company Legacy"
+        tabIndex="0"
+      >
         <div className="legacy-image">
           <div className="image-frame">
-            <img src={baniyan_tree} alt="Legacy" />
+            <img
+              src={baniyan_tree}
+              alt="Banyan tree image representing Moat’s long-term investment legacy"
+            />
           </div>
         </div>
         <div className="legacy-content">
           <h2>A Legacy Based On Sustained Performance</h2>
+          <p className="sr-only">
+            The following paragraph describes Moat's legacy and investment
+            principles.
+          </p>
+
           <p>
-At Moat Financial Services, we are more than just asset managers—we are long-term wealth partners. Since 2013, we have nurtured long-standing relationships with domestic and global investors assisting them in managing their equity portfolios in the Indian market. Our core philosophy is rooted in time-tested investment principles, enriched by the power of data analytics, research-driven insights, and a deep understanding of market dynamics. As we continue to grow, our mission remains steadfast—to empower our clients through smart, strategic, and personalized portfolio management in the vibrant landscape of Indian equities. We believe in protecting the client’s hard-earned money and creating generational wealth is a noble pursuit.
-        
+            At Moat Financial Services, we are more than just asset managers—we
+            are long-term wealth partners. Since 2013, we have nurtured
+            long-standing relationships with domestic and global investors
+            assisting them in managing their equity portfolios in the Indian
+            market. Our core philosophy is rooted in time-tested investment
+            principles, enriched by the power of data analytics, research-driven
+            insights, and a deep understanding of market dynamics. As we
+            continue to grow, our mission remains steadfast—to empower our
+            clients through smart, strategic, and personalized portfolio
+            management in the vibrant landscape of Indian equities. We believe
+            in protecting the client’s hard-earned money and creating
+            generational wealth is a noble pursuit.
           </p>
           <Link to="/Aboutus">
-            <button className="readmore-button">Read More</button>
+            <button className="readmore-button" aria-label="Read more about Moat's legacy and investment principles.">Read More</button>
           </Link>
         </div>
       </div>
-      <p className="quote">
-        <i>“Success is not always about greatness. It’s about consistency.
-        Consistent hard work leads to success. Greatness will come.”</i>
+      <p className="quote"  aria-label="Inspirational quote by MS Dhoni">
+        <i>
+          “Success is not always about greatness. It’s about consistency.
+          Consistent hard work leads to success. Greatness will come.”
+        </i>
       </p>
       <p className="dhoni">- MS Dhoni</p>
-      <div className="numbers">
+      <div
+        className="numbers"
+        role="region"
+        aria-label="Company Achievements Statistics"
+      >
         <div className="numbers-sub" ref={yearsRef} data-id="years">
-          {isVisible.years && (
-            <Roller
-              value={12}
-              suffix="+"
-              staggering
-              align="center"
-              rollDuration={3}
-            />
-          )}
+          <div aria-live="polite">
+            {isVisible.years && (
+              <Roller
+                value={12}
+                suffix="+"
+                staggering
+                align="center"
+                rollDuration={3}
+              />
+            )}
+          </div>
+
           <p>Years</p>
         </div>
 
         <div className="numbers-sub" ref={millionRef} data-id="million">
-          {isVisible.million && (
-            <Roller
-              value={280}
-              suffix="Cr+"
-              align="center"
-              staggering
-              rollDuration={3}
-            />
-          )}
+          <div aria-live="polite">
+            {isVisible.million && (
+              <Roller
+                value={280}
+                suffix="Cr+"
+                align="center"
+                staggering
+                rollDuration={3}
+              />
+            )}
+          </div>
+
           <p>Total AUM</p>
         </div>
 
         <div className="numbers-sub" ref={customersRef} data-id="customers">
-          {isVisible.customers && (
-            <Roller
-              value={250}
-              suffix="+"
-              staggering
-              align="center"
-              rollDuration={3}
-            />
-          )}
+          <div aria-live="polite">
+            {isVisible.customers && (
+              <Roller
+                value={250}
+                suffix="+"
+                staggering
+                align="center"
+                rollDuration={3}
+              />
+            )}
+          </div>
+
           <p>Happy Customers</p>
         </div>
       </div>
@@ -216,7 +229,10 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
       <div className="legacy-section" id="legacy">
         <div className="legacy-image">
           <div className="image-frame">
-            <img src={chess} alt="Legacy" />
+            <img
+              src={chess}
+              alt="Chessboard representing strategic investment planning"
+            />
             {/* <video loop muted autoPlay>
               <source src={bannervideo3} />
             </video> */}
@@ -224,6 +240,9 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
         </div>
         <div className="legacy-content">
           <h2>Strategy Designed to deliver Alpha</h2>
+                    <p className="sr-only">
+            The following paragraph describes Moat's investment strategy.
+          </p>
           <p>
             Our investment strategy is meticulously engineered to generate
             consistent alpha by combining the power of research with deep
@@ -237,7 +256,7 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
             superior risk-adjusted returns over the long term.
           </p>
           <Link to="/Schemes">
-            <button className="readmore-button">Read More</button>
+            <button className="readmore-button" aria-label="Read more about our investment strategy">Read More</button>
           </Link>
         </div>
       </div>
@@ -246,12 +265,24 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
           <h2>Core Investment Committee</h2>
         </div>
 
-        <div className="member-section" id="member-section-body">
+        <div
+          className="member-section"
+          id="member-section-body"
+          role="region"
+          aria-label="Investment Committee Members"
+        >
           {leaders.map((leader) => (
             <div className="member" key={leader.id}>
-              <Link to={`/member/${leader.key}`} state={leader}>
+              <Link
+                to={`/member/${leader.key}`}
+                state={leader}
+                aria-label={`View full profile of ${leader.name}, ${leader.title}`}
+              >
                 <div className="member-pic" id="biju">
-                  <img src={leader.image} alt={leader.name} />
+                  <img
+                    src={leader.image}
+                    alt={`Picture of ${leader.name} designation ${leader.title}`}
+                  />
                   <div className="member-about">
                     <h3>{leader.name}</h3>
                     <p>{leader.title}</p>
@@ -264,9 +295,16 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
         <div className="member-section" id="member-section-body">
           {research.map((leader) => (
             <div className="member" key={leader.id}>
-              <Link to={`/member/${leader.key}`} state={leader}>
+              <Link
+                to={`/member/${leader.key}`}
+                state={leader}
+                aria-label={`View full profile of ${leader.name}, ${leader.title}`}
+              >
                 <div className="member-pic" id="biju">
-                  <img src={leader.image} alt={leader.name} />
+                  <img
+                    src={leader.image}
+                    alt={`Picture of ${leader.name} designation ${leader.title}`}
+                  />
                   <div className="member-about">
                     <h3>{leader.name}</h3>
                     <p>{leader.title}</p>
@@ -277,77 +315,11 @@ At Moat Financial Services, we are more than just asset managers—we are long-t
           ))}
         </div>
         <Link to="Fullteam">
-          <button className="readmore-button" id="pioneer-section-button">
+          <button className="readmore-button" id="pioneer-section-button" aria-label="View our full team of investment committee members">
             See Our Full Team
           </button>
         </Link>
       </div>
-      {/* <div className="media-container">
-        <Link to="/Communique4">
-          {" "}
-          <div className="media-section">
-            <div className="media-section-image">
-              <img src={moat} alt="blog pic" />
-            </div>
-            <div className="media-section-content">
-              <p>June 23, 2025</p>
-              <h4>Unpacking the mystery of MOAT</h4>
-              <p>
-                A Moat is a wide trench dug around a castle often filled with
-                water with alligators and piranhas in it to fend off attackers.
-                The wider the moat the stronger is the castle that it
-                surrounds...
-              </p>
-              <button className="readmore-button">Read More</button>
-            </div>
-          </div>
-        </Link>
-        <Link to="/Communique1">
-          {" "}
-          <div className="media-section">
-            <div className="media-section-image">
-              <img src={image4} alt="blog pic" />
-            </div>
-            <div className="media-section-content">
-              <p>June 14,2024</p>
-              <h4>
-                Celebrating Our Achievement: Top 10 Rankings for Our PMS
-                Strategies
-              </h4>
-              <p>
-                We are delighted to share some exciting news from Moat Financial
-                Services and UpperCrust Wealth! Our three Portfolio Management
-                Services (PMS) strategies have climbed into the top 10 rankings
-                for May 2024 🚀
-              </p>
-
-              <button className="readmore-button">Read More</button>
-            </div>
-          </div>
-        </Link>
-
-        <Link to="/Communique3">
-          <div className="media-section">
-            <div className="media-section-image">
-              <img src={image6} alt="blog pic" />
-            </div>
-            <div className="media-section-content">
-              <p>August 13, 2023</p>
-              <h4>
-                Crafting Wealth, Capturing the Remarkable: Your Portfolio, Our
-                Passion!
-              </h4>
-              <p>
-                Embrace the journey from the fear of missing out to the pinnacle
-                of Financial Freedom by taking decisive action today with Moat
-                Financial Services Private Ltd Our diligently made investment
-                fund presents a thriving opportunity to assure your...
-              </p>
-              <button className="readmore-button">Read More</button>
-            </div>
-          </div>
-        </Link>
-      </div> */}
     </div>
   );
 };

@@ -130,6 +130,13 @@ background-color:#f9f9f9;
   transition: opacity 0.3s ease-out, transform 0.5s ease,
   visibility 0.3s ease-out;
 }
+/* Show dropdown when JS adds the "open" class (keyboard accessible) */
+.dropdown.open {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 /* Show the dropdown when hovering over the nav-item */
 .nav-item:hover .dropdown {
   opacity: 1;
@@ -161,6 +168,10 @@ background-color:#f9f9f9;
 .dropdown a:hover {
   color: #007bff;
 }
+.dropdown a:focus {
+  outline: 2px solid #007bff;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 1200px) {

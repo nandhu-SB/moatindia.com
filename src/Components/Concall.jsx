@@ -21,15 +21,23 @@ const Concall = () => {
   const pdfFiles = [
     {
       file: "JIOFINANCIALSERVICESLTD-Q2FY26-ConcallNotes.pdf",
-      name: "JIO FINANCIAL SERVICES LTD - Q2FY26 -Concall Notes",
+      name: "JIO FINANCIAL SERVICES LTD",
     },
     {
       file: "APOLLO HOSPITALS-Q2FY26-Concall Notes.pdf",
-      name: "APOLLO HOSPITALS - Q2FY26 -Concall Notes",
+      name: "APOLLO HOSPITALS",
     },
     {
       file: "TARIL  - Q2FY26 -Concall Notes.pdf",
-      name: "TARIL  - Q2FY26 -Concall Notes",
+      name: "TARIL",
+    },
+        {
+      file: "Linde India .pdf",
+      name: "Linde India",
+    },
+            {
+      file: "L & T TECHNOLOGY SERVICES - ANALYSIS.pdf",
+      name: "L & T TECHNOLOGY SERVICES",
     },
   ];
 

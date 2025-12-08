@@ -1,37 +1,121 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/logo-moat-india-2 copy.png";
 
 const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
+  const buttonRef = useRef(null);
+  const menuRef = useRef(null);
+
+  // Keyboard accessibility handling
+  const onKeyDown = (e) => {
+    const isOpen = activeMenu === title;
+
+    switch (e.key) {
+      case "Enter":
+      case " ":
+        e.preventDefault();
+        setActiveMenu(isOpen ? null : title);
+        break;
+
+      case "ArrowDown":
+        if (!isOpen) {
+          setActiveMenu(title);
+        } else {
+          const firstItem = menuRef.current?.querySelector("a, button");
+          firstItem?.focus();
+        }
+        break;
+
+      case "Escape":
+        setActiveMenu(null);
+        buttonRef.current?.focus();
+        break;
+
+      default:
+        break;
+    }
+  };
+
+  const onMenuKeyDown = (e, index) => {
+    const menuItems = Array.from(menuRef.current.querySelectorAll("a, button"));
+
+    switch (e.key) {
+      case "ArrowDown":
+        e.preventDefault();
+        menuItems[(index + 1) % menuItems.length]?.focus();
+        break;
+
+      case "ArrowUp":
+        e.preventDefault();
+        menuItems[(index - 1 + menuItems.length) % menuItems.length]?.focus();
+        break;
+
+      case "Escape":
+        setActiveMenu(null);
+        buttonRef.current?.focus();
+        break;
+
+      default:
+        break;
+    }
+  };
+
   return (
     <div
       className="nav-item"
       onMouseEnter={() => setActiveMenu(title)}
       onMouseLeave={() => setActiveMenu(null)}
       id={id}
+      onBlur={(e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+          setActiveMenu(null);
+        }
+      }}
     >
-      <button aria-expanded={activeMenu === title}>{title}</button>
-      {activeMenu === title && (
-        <div className="dropdown">
+      <button
+        ref={buttonRef}
+        aria-haspopup="true"
+        aria-expanded={activeMenu === title}
+        onKeyDown={onKeyDown}
+        onFocus={() => setActiveMenu(title)}
+      >
+        {title}
+      </button>
+
+      {
+        <div
+          className={`dropdown ${activeMenu === title ? "open" : ""}`}
+          role="menu"
+          ref={menuRef}
+        >
           {items.map(({ to, label, external }, index) =>
             external ? (
               <a
                 key={index}
                 href={to}
+                role="menuitem"
+                tabIndex="0"
                 target="_blank"
                 rel="noopener noreferrer"
+                onKeyDown={(e) => onMenuKeyDown(e, index)}
               >
                 {label}
               </a>
             ) : (
-              <Link key={index} to={to}>
+              <Link
+                key={index}
+                to={to}
+                role="menuitem"
+                tabIndex="0"
+                onKeyDown={(e) => onMenuKeyDown(e, index)}
+              >
                 {label}
               </Link>
             )
           )}
         </div>
-      )}
+      }
     </div>
   );
 };
