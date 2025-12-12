@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/logo-moat-india-2 copy.png";
 
-const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
+const Dropdown = ({ title, id, items, activeMenu, setActiveMenu, isMobile }) => {
   const buttonRef = useRef(null);
   const menuRef = useRef(null);
 
-  // Keyboard accessibility handling
   const onKeyDown = (e) => {
     const isOpen = activeMenu === title;
 
@@ -18,44 +17,6 @@ const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
         setActiveMenu(isOpen ? null : title);
         break;
 
-      case "ArrowDown":
-        if (!isOpen) {
-          setActiveMenu(title);
-        } else {
-          const firstItem = menuRef.current?.querySelector("a, button");
-          firstItem?.focus();
-        }
-        break;
-
-      case "Escape":
-        setActiveMenu(null);
-        buttonRef.current?.focus();
-        break;
-
-      default:
-        break;
-    }
-  };
-
-  const onMenuKeyDown = (e, index) => {
-    const menuItems = Array.from(menuRef.current.querySelectorAll("a, button"));
-
-    switch (e.key) {
-      case "ArrowDown":
-        e.preventDefault();
-        menuItems[(index + 1) % menuItems.length]?.focus();
-        break;
-
-      case "ArrowUp":
-        e.preventDefault();
-        menuItems[(index - 1 + menuItems.length) % menuItems.length]?.focus();
-        break;
-
-      case "Escape":
-        setActiveMenu(null);
-        buttonRef.current?.focus();
-        break;
-
       default:
         break;
     }
@@ -64,12 +25,12 @@ const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
   return (
     <div
       className="nav-item"
-      onMouseEnter={() => setActiveMenu(title)}
-      onMouseLeave={() => setActiveMenu(null)}
       id={id}
-      onBlur={(e) => {
-        if (!e.currentTarget.contains(e.relatedTarget)) {
-          setActiveMenu(null);
+      onMouseEnter={() => !isMobile && setActiveMenu(title)}
+      onMouseLeave={() => !isMobile && setActiveMenu(null)}
+      onClick={() => {
+        if (isMobile) {
+          setActiveMenu(activeMenu === title ? null : title);
         }
       }}
     >
@@ -78,52 +39,48 @@ const Dropdown = ({ title, id, items, activeMenu, setActiveMenu }) => {
         aria-haspopup="true"
         aria-expanded={activeMenu === title}
         onKeyDown={onKeyDown}
-        onFocus={() => setActiveMenu(title)}
       >
         {title}
       </button>
 
-      {
-        <div
-          className={`dropdown ${activeMenu === title ? "open" : ""}`}
-          role="menu"
-          ref={menuRef}
-        >
-          {items.map(({ to, label, external }, index) =>
-            external ? (
-              <a
-                key={index}
-                href={to}
-                role="menuitem"
-                tabIndex="0"
-                target="_blank"
-                rel="noopener noreferrer"
-                onKeyDown={(e) => onMenuKeyDown(e, index)}
-              >
-                {label}
-              </a>
-            ) : (
-              <Link
-                key={index}
-                to={to}
-                role="menuitem"
-                tabIndex="0"
-                onKeyDown={(e) => onMenuKeyDown(e, index)}
-              >
-                {label}
-              </Link>
-            )
-          )}
-        </div>
-      }
+      <div
+        className={`dropdown ${activeMenu === title ? "open" : ""}`}
+        role="menu"
+        ref={menuRef}
+      >
+        {items.map(({ to, label, external }, index) =>
+          external ? (
+            <a
+              key={index}
+              href={to}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setActiveMenu(null)}
+            >
+              {label}
+            </a>
+          ) : (
+            <Link
+              key={index}
+              to={to}
+              onClick={() => setActiveMenu(null)}
+            >
+              {label}
+            </Link>
+          )
+        )}
+      </div>
     </div>
   );
 };
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState(null);
   const dropdownRef = useRef(null);
+
+  const isMobile = typeof window !== "undefined" && window.innerWidth <= 1200;
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -149,37 +106,38 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "Complaints Data October 2025.pdf",
+      file: "Complaints Data November 2025.pdf",
 
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Fact Sheet - Emerging Moat October 2025.pdf",
+      file: "Fact Sheet - Emerging Moat November 2025.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
-      file: "Fact Sheet - Moderate Compounders October 2025.pdf",
+      file: "Fact Sheet - Moderate Compounders November 2025.pdf",
       name: "Moderate Compounders Factsheet",
     },
 
     {
-      file: "Fact Sheet - Special Opportunties Fund October 2025.pdf",
+      file: "Fact Sheet - Special Opportunties Fund November 2025.pdf",
 
       name: "Special Opportunities Factsheet",
     },
-    // {
-    //   file: "UCWF-Factsheet_Dec24.pdf",
-    //   name: "UpperCrust Wealth Fund Factsheet",
-    // },
+
     {
-      file: "Monthly and Yearly Performance October 2025 Moat & Uppercrust.pdf",
-      name: "Monthly and Yearly Performance Report",
+      file: "Monthly and Yearly Performance November 2025 Moat & Uppercrust.pdf",
+      name: "Monthly and Yearly Performance Report - Moat & Uppercrust",
+    },
+    {
+      file: "Monthly and Yearly Performance November 2025 Moat & Auxano.pdf",
+      name: "Monthly and Yearly Performance Report - Moat & Auxano",
     },
   ];
 
   return (
-    <nav className="navbar" ref={dropdownRef}>
+    <nav className={`navbar ${menuOpen ? "mobile" : ""}`} ref={dropdownRef}>
       <Link to="/" className="navbar-logo">
         <img src={logo} alt="Moat Financial Services Logo" />
       </Link>
@@ -241,10 +199,12 @@ const Navbar = () => {
             },
             {
               to: "/Concall",
-              label: "Concalls",
+              label: "Analysis Reports",
               external: false,
             },
-          ]}
+
+          ]
+        }isMobile={isMobile}
         />
 
         {/* <Link to="/NewsLetter">
@@ -294,6 +254,7 @@ const Navbar = () => {
             //   external: true,
             // },
           ]}
+          isMobile={isMobile}
         />
 
         <Dropdown
@@ -305,6 +266,7 @@ const Navbar = () => {
             label: name,
             external: true,
           }))}
+          isMobile={isMobile}
         />
 
         {/* <Dropdown

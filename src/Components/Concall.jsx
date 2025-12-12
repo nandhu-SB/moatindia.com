@@ -39,6 +39,14 @@ const Concall = () => {
       file: "L & T TECHNOLOGY SERVICES - ANALYSIS.pdf",
       name: "L & T TECHNOLOGY SERVICES",
     },
+                {
+      file: "TATA ELXSI - ANALYSIS (4).pdf",
+      name: "TATA ELXSI - ANALYSIS",
+    },
+                    {
+      file: "Kaynes Technology India Ltd - Our View.pdf",
+      name: "Kaynes Technology India Ltd - Our View",
+    },
   ];
 
   return (
@@ -46,7 +54,7 @@ const Concall = () => {
       <Navbar />
 
       <div className="newsletter-container">
-        <h3>Concalls - highlights</h3>
+        <h3>Analysis Reports</h3>
         <div className="newsletter-list">
           {pdfFiles.map(({ file, name }) => (
             <div

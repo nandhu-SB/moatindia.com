@@ -7,6 +7,11 @@ import baniyan_tree from "../assets/baniyan_tree.png";
 
 import { Roller } from "@fecapark/number-rolling";
 import { Link } from "react-router-dom";
+
+import biju from "../assets/team/biju-john.jpg";
+import fazal from "../assets/team/Fazal-Hameed.jpg";
+import Section from "./Section";
+
 import leaderImage1 from "../assets/team/biju-john.jpg";
 import leaderImage2 from "../assets/team/Fazal-Hameed.jpg";
 import leaderImage3 from "../assets/team/sudheesh-m.jpg";
