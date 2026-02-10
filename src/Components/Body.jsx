@@ -20,7 +20,7 @@ import research1 from "../assets/team/Jyothish.jpg";
 import research2 from "../assets/team/ben.jpg";
 import research3 from "../assets/team/nandhu-sb.jpg";
 import research4 from "../assets/team/Midhun Profile Pic 2.jpg";
-
+import research7 from "../assets/team/reshma.jpg";
 const Body = () => {
   const research = [
     {
@@ -51,6 +51,13 @@ const Body = () => {
       title: "Equity Research Analyst",
       info: "Jyothish Vijayan is an equity market professional with a focus on long-term, fundamentals-driven investing. Prior to joining Moat India Ltd, he gained hands-on experience in capital markets through roles at Axis Securities and Motilal Oswal. He has also cleared the NISM Series XV: Research Analyst Certification Examination. Jyothish represents the new generation of investors shaped by the growth and evolution of the Indian equity markets.",
     },
+    {
+  id: 6,
+  image: research7,
+  name: "Reshma Gopika",
+  title: "Equity Research Analyst",
+  info: "Reshma Gopika is an Equity Research Analyst with a strong foundation in financial analysis, valuation, and capital markets. She holds an MBA (Finance) and cleared CFA Level I. She is certified in Financial Modelling by NSE and holds the NISM Series XV – Research Analyst certification, demonstrating her technical expertise and regulatory knowledge.",
+}
   ];
   const leaders = [
     {
@@ -202,7 +209,7 @@ const Body = () => {
           <div aria-live="polite">
             {isVisible.million && (
               <Roller
-                value={280}
+                value={300}
                 suffix="Cr+"
                 align="center"
                 staggering

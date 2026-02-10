@@ -106,33 +106,31 @@ const Navbar = () => {
       name: "Investor Charter Report",
     },
     {
-      file: "Complaints Data November 2025.pdf",
+      file: "Complaints Data January 2026.pdf",
 
       name: "Investor Grievance Disclosure",
     },
     {
-      file: "Fact Sheet - Emerging Moat November 2025.pdf",
+      file: "Fact Sheet - Emerging Moat January 2026.pdf",
       name: "Emerging Moat Factsheet",
     },
 
     {
-      file: "Fact Sheet - Moderate Compounders November 2025.pdf",
+      file: "Fact Sheet - Moderate Compounders January 2026.pdf.pdf",
       name: "Moderate Compounders Factsheet",
     },
 
     {
-      file: "Fact Sheet - Special Opportunties Fund November 2025.pdf",
+      file: "Fact Sheet - Special Opportunties Fund January 2026.pdf",
 
       name: "Special Opportunities Factsheet",
     },
 
+
+  
     {
-      file: "Monthly and Yearly Performance November 2025 Moat & Uppercrust.pdf",
-      name: "Monthly and Yearly Performance Report - Moat & Uppercrust",
-    },
-    {
-      file: "Monthly and Yearly Performance November 2025 Moat & Auxano.pdf",
-      name: "Monthly and Yearly Performance Report - Moat & Auxano",
+      file: "Monthly and Yearly Performance January 2026.pdf",
+      name: "Moat Monthly and Yearly Performance",
     },
   ];
 
