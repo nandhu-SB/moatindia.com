@@ -2,9 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../assets/logo-moat-india-2 copy.png";
-import {collection, getDocs, orderBy, query} from "firebase/firestore";
-import {db} from "../firebase/firebase";
-
 
 const Dropdown = ({ title, id, items, activeMenu, setActiveMenu, isMobile }) => {
   const buttonRef = useRef(null);
@@ -24,7 +21,6 @@ const Dropdown = ({ title, id, items, activeMenu, setActiveMenu, isMobile }) => 
         break;
     }
   };
-
 
   return (
     <div
@@ -85,22 +81,6 @@ const Navbar = () => {
   const dropdownRef = useRef(null);
 
   const isMobile = typeof window !== "undefined" && window.innerWidth <= 1200;
-  const [downloads, setDownloads] = useState([]);
-
-useEffect(() => {
-  const fetchDownloads = async () => {
-    const snapshot = await getDocs(collection(db, "files"))
-    const files = snapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }))
-    setDownloads(files)
-  }
-
-  fetchDownloads()
-}, [])
-
-
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -115,7 +95,44 @@ useEffect(() => {
     };
   }, []);
 
+  const downloads = [
+    {
+      file: "DISCLOSURE_Sept_2025.pdf",
+      name: "Disclosure Document",
+    },
 
+    {
+      file: "Investor-Charter-Disclosure.pdf",
+      name: "Investor Charter Report",
+    },
+    {
+      file: "Complaints Data January 2026.pdf",
+
+      name: "Investor Grievance Disclosure",
+    },
+    {
+      file: "Fact Sheet - Emerging Moat January 2026.pdf",
+      name: "Emerging Moat Factsheet",
+    },
+
+    {
+      file: "Fact Sheet - Moderate Compounders January 2026.pdf.pdf",
+      name: "Moderate Compounders Factsheet",
+    },
+
+    {
+      file: "Fact Sheet - Special Opportunties Fund January 2026.pdf",
+
+      name: "Special Opportunities Factsheet",
+    },
+
+
+  
+    {
+      file: "Monthly and Yearly Performance January 2026.pdf",
+      name: "Moat Monthly and Yearly Performance",
+    },
+  ];
 
   return (
     <nav className={`navbar ${menuOpen ? "mobile" : ""}`} ref={dropdownRef}>
@@ -168,10 +185,25 @@ useEffect(() => {
           <button className="dropdown-button">Business Opportunity</button>
         </Link>
 
-        <Link to="/ReadingRoom">
-          {" "}
-          <button className="dropdown-button">Reading Room</button>
-        </Link>
+        <Dropdown
+          title="Reading Room"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={[
+            {
+              to: "/NewsLetter",
+              label: "Articles",
+              external: false,
+            },
+            {
+              to: "/Concall",
+              label: "Analysis Reports",
+              external: false,
+            },
+
+          ]
+        }isMobile={isMobile}
+        />
 
         {/* <Link to="/NewsLetter">
           {" "}
@@ -223,19 +255,17 @@ useEffect(() => {
           isMobile={isMobile}
         />
 
-<Dropdown
-  title="Downloads"
-  activeMenu={activeMenu}
-  setActiveMenu={setActiveMenu}
-items={downloads.map((item) => ({
-  to: item.fileUrl,
-  label: item.title,
-  external: true,
-}))}
-
-  isMobile={isMobile}
-/>
-
+        <Dropdown
+          title="Downloads"
+          activeMenu={activeMenu}
+          setActiveMenu={setActiveMenu}
+          items={downloads.map(({ file, name }) => ({
+            to: `/files/${file}`,
+            label: name,
+            external: true,
+          }))}
+          isMobile={isMobile}
+        />
 
         {/* <Dropdown
           id="contact-button"

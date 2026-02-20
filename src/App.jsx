@@ -30,17 +30,24 @@ import DirectOnboarding from "./Components/DirectOnboarding";
 import BusinessOpportunitiy from "./Components/BusinessOpportunitiy";
 import BusinessOpportunityContact from "./Components/BusinessOpportunityContact";
 import Concall from "./Components/Concall";
-
+import Backend from "./Components/Backend";
+import Login from "./Components/Login";
+import { AuthProvider } from "./contexts/authContext";
+import Register from "./Components/Register";
 
 function App() {
   return (
-    <>
+    <><AuthProvider>
       <BrowserRouter>
       
         <ScrollToTop />
         <Routes>
+          
           <Route exact path="/" element={<Home />} />
           <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/login" element={<Login/>} />
+          <Route exact path="/register" element={<Register />} />
+          <Route exact path="/Backend" element={<Backend/>} />
           <Route exact path="/AboutUs" element={<AboutUs />} />
           <Route exact path="/Fullteam" element={<Fullteam />} />
           <Route exact path="/member/:id" element={<MemberDetail />} />
@@ -55,7 +62,7 @@ function App() {
           <Route exact path="/Communique3" element={<Communique3 />} />
           <Route exact path="/Communique4" element={<Communique4 />} />
           <Route exact path="/NewsLetter" element={<NewsLetter />} />
-          <Route exact path="/Concall" element={<Concall/>} />
+          <Route exact path="/ReadingRoom" element={<Concall/>} />
           <Route exact path="/EmergingMoat" element={<EmergingMoat />} />
           <Route exact path="/DirectOnboarding" element={<DirectOnboarding/>}/>
           <Route exact path="/BusinessOpportunity" element={<BusinessOpportunitiy/>}/>
@@ -102,6 +109,7 @@ function App() {
           <Route exact path="*" element={<PgFOF />} />
         </Routes>
       </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }

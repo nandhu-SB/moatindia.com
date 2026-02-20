@@ -1,0 +1,114 @@
+/* ===== GLOBAL CONTAINER ===== */
+.concall-container,
+.book-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.concall-container h3,
+.book-container h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+/* ===== GRID LAYOUT ===== */
+.concall-list,
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* ===== CARD BASE STYLE ===== */
+.concall-card,
+.book-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== CARD HOVER EFFECT ===== */
+.concall-card:hover,
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== GRADIENT BORDER EFFECT ===== */
+.concall-card::before,
+.book-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  padding: 2px;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.concall-card:hover::before,
+.book-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== TITLES ===== */
+.concall-title,
+.book-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+/* ===== BOOK DESCRIPTION ===== */
+.book-description {
+  font-size: 14px;
+  color: #6b7280;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* ===== SECTION SEPARATION ===== */
+.book-container {
+  margin-top: 80px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .concall-container,
+  .book-container {
+    margin: 40px auto;
+  }
+
+  .concall-card,
+  .book-card {
+    height: 160px;
+    padding: 20px;
+  }
+
+  .concall-container h3,
+  .book-container h3 {
+    font-size: 22px;
+  }
+}

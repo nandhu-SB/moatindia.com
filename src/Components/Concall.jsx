@@ -1,80 +1,116 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import "./NewsLetter.css";
-import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
-
-const PDFPreview = ({ file }) => {
-  return (
-    <div style={{ width: 300 }}>
-      <Document file={`/Concall/${file}`}>
-        <Page pageNumber={1} width={300} />
-      </Document>
-    </div>
-  );
-};
-
-
+import "./Concall.css";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../firebase/firebase";
 
 const Concall = () => {
-  const pdfFiles = [
-    {
-      file: "JIOFINANCIALSERVICESLTD-Q2FY26-ConcallNotes.pdf",
-      name: "JIO FINANCIAL SERVICES LTD",
-    },
-    {
-      file: "APOLLO HOSPITALS-Q2FY26-Concall Notes.pdf",
-      name: "APOLLO HOSPITALS",
-    },
-    {
-      file: "TARIL  - Q2FY26 -Concall Notes.pdf",
-      name: "TARIL",
-    },
-        {
-      file: "Linde India .pdf",
-      name: "Linde India",
-    },
-            {
-      file: "L & T TECHNOLOGY SERVICES - ANALYSIS.pdf",
-      name: "L & T TECHNOLOGY SERVICES",
-    },
-                {
-      file: "TATA ELXSI - ANALYSIS (4).pdf",
-      name: "TATA ELXSI - ANALYSIS",
-    },
-                    {
-      file: "Kaynes Technology India Ltd - Our View.pdf",
-      name: "Kaynes Technology India Ltd - Our View",
-    },
-  ];
+  const [pdfFiles, setPdfFiles] = useState([]);
+  const [articleFiles, setArticleFiles] = useState([]);
+  const[readingList, setReadingList] = useState([]);
+
+useEffect(() => {
+  const fetchConcallFiles = async () => {
+    const querySnapshot = await getDocs(collection(db, "concallNotes"));
+
+    const files = querySnapshot.docs.map(doc => ({
+      id: doc.id,
+      ...doc.data()
+    }));
+
+    setPdfFiles(files);
+  };
+
+  fetchConcallFiles();
+}, []);
+
+const fetchReadingList = async () => {
+  const querySnapshot = await getDocs(collection(db, "books"));
+  const books = querySnapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data()
+  }));
+  setReadingList(books);
+};
+
+useEffect(() => {
+  fetchReadingList();
+}, []);
+
+
+const fetchArticleFiles = async () => {
+  const querySnapshot = await getDocs(collection(db, "articles"));
+
+  const files = querySnapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data()
+  }));
+
+  setArticleFiles(files);
+};
+
+useEffect(() => {
+  fetchArticleFiles();
+}, []);
+
 
   return (
     <div>
       <Navbar />
 
-      <div className="newsletter-container">
+      <div className="concall-container">
         <h3>Analysis Reports</h3>
-        <div className="newsletter-list">
-          {pdfFiles.map(({ file, name }) => (
-            <div
-              key={file}
-              className="newsletter-item"
-              onClick={() => window.open(`/Concall/${file}`, "_blank")}
-            >
-              <object
-                className="pdf-preview"
-                data={`/Concall/${file}#page=1`}
-                type="application/pdf"
-                // width="100%"
-              >
-                {/* <p>PDF preview not available. Click to open.</p> */}
-              </object>
-              <p className="newsletter-name">{name}</p>
+        <div className="concall-list">
+        {pdfFiles.map(({ id, title, pdfUrl }) => (
+          <div
+            key={id}
+            className="concall-item"
+            onClick={() => window.open(pdfUrl, "_blank")}
+          >
+            <div className="concall-card">
+              <h4 className="concall-title">{title}</h4>
             </div>
-          ))}
+          </div>
+        ))}
         </div>
       </div>
+      <div className="concall-container">
+        <h3>Articles</h3>
+        <div className="concall-list">
+        {articleFiles.map(({ id, title, pdfUrl,description }) => (
+          <div
+            key={id}
+            className="concall-item"
+            onClick={() => window.open(pdfUrl, "_blank")}
+          >
+            <div className="concall-card">
+              <h4 className="concall-title">{title}</h4>
+              <p className="book-description">{description}</p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+        <div className="book-container">
+        <h3>Reading List</h3>
+        <p> Here we suggest some of many interesting books and resources for further reading.</p>
+        <div className="book-list">
+        {readingList.map(({ id, name, description}) => (
+          <div
+            key={id}
+            className="book-item"
+            onClick={() => window.open(pdfUrl, "_blank")}
+          >
+            <div className="book-card">
+              <h4 className="book-title">{name}</h4>
+              <p className="book-description">{description}</p>
+            </div>
+          </div>
+        ))}
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
