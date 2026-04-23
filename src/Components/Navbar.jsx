@@ -4,7 +4,8 @@ import "./Navbar.css";
 import logo from "../assets/logo-moat-india-2 copy.png";
 import {collection, getDocs, orderBy, query} from "firebase/firestore";
 import {db} from "../firebase/firebase";
-
+import msuiteLogo from "../assets/msuite.png";
+// "C:\Users\nandh\OneDrive - Moat Financial Services private Limited\moatindia.com\src\assets\msuite.png"
 
 const Dropdown = ({ title, id, items, activeMenu, setActiveMenu, isMobile }) => {
   const buttonRef = useRef(null);
@@ -145,6 +146,7 @@ useEffect(() => {
             { to: "/AboutUs#credentials", label: "Credentials" },
           ]}
         /> */}
+                <a href="https://msuite.moatindia.com" target="_blank" rel="noopener noreferrer"><button className="dropdown-button msuite-button">Msuite</button></a>
         <Link to="/AboutUs">
           {" "}
           <button className="dropdown-button">About Us</button>

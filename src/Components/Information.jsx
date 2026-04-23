@@ -26,6 +26,13 @@ const Information = () => {
             Behind Changampuzha Park Metro Station, <br />
             Edappally, Kochi - 682024, Kerala, India.<br/>
             pms@moatindia.com<br/>
+            <br />
+            Fazal Hameed<br/>
+            Compliance Officer<br/>
+            +91 9961729290<br/>
+<br/>
+            Twinkle PT <br/>
+            Investor Relations<br/>
             +91 9895590168<br/>
             <GoogleMap />
           </section>

@@ -69,6 +69,19 @@ background-color:#f9f9f9;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+.msuite-button {
+  display: inline-flex;
+  align-items: center;
+  /* justify-content: flex-end; */
+}
+
+.msuite-logo {
+  height: 60px;
+  width: auto;
+  display: block;
+
+}
+
 .dropdown-button{
     background: none;
   border: 0px solid var(--enam-blue);

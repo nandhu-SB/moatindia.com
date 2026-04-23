@@ -38,6 +38,8 @@ const BusinessOpportunityContact = () => {
         formData,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
+
+      
       .then(() => {
         alert(`Thank you, ${formData.from_name}. We will get back to you soon!`);
         setFormData({ from_name: "", reply_to: "", number: "", message: "" });

@@ -126,7 +126,7 @@ const Fullteam = () => {
     {
       id: 2,
       image: operations2,
-      name: "Rahul",
+      name: "Rahul Suresh",
       title: "Operations",
       info: "He has over 8+ years of experience working in IT and Capital Market. Before joining Moat, he worked as an Equity Dealer with Geojit Financial Services Ltd. He is a BSc electronics Graduate Rahul is currently handling Dealing Operations",
     },
